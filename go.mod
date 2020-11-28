@@ -1,4 +1,4 @@
-module github.com/jamespwilliams/iso3166-1
+module github.com/jamespwilliams/iso3166_1
 
 go 1.14
 

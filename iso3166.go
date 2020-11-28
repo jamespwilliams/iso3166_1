@@ -1,6 +1,8 @@
-package iso3166
+// Package iso3166_1 provides efficient functions for accessing information about countries, as standardised in
+// ISO-3166-1
+package iso3166_1
 
-//go:generate go run github.com/jamespwilliams/iso3166/gen -o generated.go
+//go:generate go run github.com/jamespwilliams/iso3166_1/gen -o generated.go
 
 type Country int
 

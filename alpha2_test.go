@@ -1,4 +1,4 @@
-package iso3166
+package iso3166_1
 
 import (
 	"math/rand"

@@ -93,7 +93,7 @@ func main() {
 		panic(err)
 	}
 
-	f := NewFile("iso3166")
+	f := NewFile("iso3166_1")
 
 	f.Const().Defs(constantDeclarations...)
 
