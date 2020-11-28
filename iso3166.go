@@ -7,3 +7,7 @@ type Country int64
 func Alpha2(country Country) (alpha2 string) {
 	return alpha2s[int(country)]
 }
+
+func Alpha3(country Country) (alpha2 string) {
+	return alpha3s[int(country)]
+}

@@ -69,6 +69,12 @@ func main() {
 		}
 	})
 
+	alpha3Dict := DictFunc(func(d Dict) {
+		for numeric, country := range countries {
+			d[Lit(numeric)] = Lit(country.alpha3)
+		}
+	})
+
 	var constantDeclarations []Code
 	var constants []Code
 
@@ -88,6 +94,8 @@ func main() {
 	f.Var().Id("AllCountries").Op("=").Index().Op("Country").Values(constants...)
 
 	f.Var().Id("alpha2s").Op("=").Index(Op("...")).String().Values(alpha2Dict)
+
+	f.Var().Id("alpha3s").Op("=").Index(Op("...")).String().Values(alpha3Dict)
 
 	if err := f.Save(*outputFileFlag); err != nil {
 		fmt.Println(err)
