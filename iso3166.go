@@ -4,10 +4,10 @@ package iso3166
 
 type Country int64
 
-func Alpha2(country Country) (alpha2 string) {
-	return alpha2s[int(country)]
+func (c Country) Alpha2() (alpha2 string) {
+	return alpha2s[int(c)]
 }
 
-func Alpha3(country Country) (alpha2 string) {
-	return alpha3s[int(country)]
+func (c Country) Alpha3() (alpha3 string) {
+	return alpha3s[int(c)]
 }

@@ -12,7 +12,7 @@ func BenchmarkOurAlpha2(b *testing.B) {
 	rand.Seed(time.Now().Unix())
 	for n := 0; n < b.N; n++ {
 		country := AllCountries[rand.Intn(len(AllCountries))]
-		_ = Alpha2(country)
+		_ = country.Alpha2()
 	}
 }
 
@@ -30,7 +30,7 @@ func BenchmarkOurAlpha3(b *testing.B) {
 	rand.Seed(time.Now().Unix())
 	for n := 0; n < b.N; n++ {
 		country := AllCountries[rand.Intn(len(AllCountries))]
-		_ = Alpha3(country)
+		_ = country.Alpha3()
 	}
 }
 
