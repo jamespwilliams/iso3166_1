@@ -12,7 +12,7 @@ import (
 
 type country struct {
 	constantName string
-	isoShortName string
+	shortName    string
 	alpha2       string
 	alpha3       string
 }
@@ -57,7 +57,7 @@ func main() {
 
 		countries[numeric] = country{
 			constantName: getConstName(components[0]),
-			isoShortName: components[0],
+			shortName:    components[0],
 			alpha2:       components[2],
 			alpha3:       components[3],
 		}
@@ -72,6 +72,12 @@ func main() {
 	alpha3Dict := DictFunc(func(d Dict) {
 		for numeric, country := range countries {
 			d[Lit(numeric)] = Lit(country.alpha3)
+		}
+	})
+
+	shortNameDict := DictFunc(func(d Dict) {
+		for numeric, country := range countries {
+			d[Lit(numeric)] = Lit(country.shortName)
 		}
 	})
 
@@ -96,6 +102,8 @@ func main() {
 	f.Var().Id("alpha2s").Op("=").Index(Op("...")).String().Values(alpha2Dict)
 
 	f.Var().Id("alpha3s").Op("=").Index(Op("...")).String().Values(alpha3Dict)
+
+	f.Var().Id("shortNames").Op("=").Index(Op("...")).String().Values(shortNameDict)
 
 	if err := f.Save(*outputFileFlag); err != nil {
 		fmt.Println(err)
