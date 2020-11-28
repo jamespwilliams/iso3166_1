@@ -69,9 +69,12 @@ func main() {
 		}
 	})
 
+	var constantDeclarations []Code
 	var constants []Code
+
 	for numeric, country := range countries {
-		constants = append(constants, Id(country.constantName).Op("=").Lit(numeric))
+		constantDeclarations = append(constantDeclarations, Id(country.constantName).Op("=").Lit(numeric))
+		constants = append(constants, Id(country.constantName))
 	}
 
 	if err := scanner.Err(); err != nil {
@@ -80,7 +83,9 @@ func main() {
 
 	f := NewFile("iso3166")
 
-	f.Const().Defs(constants...)
+	f.Const().Defs(constantDeclarations...)
+
+	f.Var().Id("AllCountries").Op("=").Index().Op("Country").Values(constants...)
 
 	f.Var().Id("alpha2s").Op("=").Index(Op("...")).String().Values(alpha2Dict)
 
