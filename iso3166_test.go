@@ -21,3 +21,19 @@ func TestFromAlpha3(t *testing.T) {
 		assert.Equal(t, c.Numeric, c2.Numeric)
 	}
 }
+
+func TestDirectAccessSmoke(t *testing.T) {
+	assert.Equal(t, 826, UnitedKingdomOfGreatBritainAndNorthernIreland.Numeric)
+}
+
+func TestFromAlpha2Smoke(t *testing.T) {
+	c2, err := FromAlpha2("GB")
+	assert.NoError(t, err)
+	assert.Equal(t, 826, c2.Numeric)
+}
+
+func TestFromAlpha3Smoke(t *testing.T) {
+	c2, err := FromAlpha3("GBR")
+	assert.NoError(t, err)
+	assert.Equal(t, 826, c2.Numeric)
+}
