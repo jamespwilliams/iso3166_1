@@ -18,7 +18,7 @@ type Country struct {
 var ErrNoSuchCountry = errors.New("iso3166_1: no such country exists")
 
 func FromNumeric(c int) Country {
-	return structSlice[c]
+	return countries[c]
 }
 
 func FromAlpha2(a2 string) (Country, error) {
@@ -36,12 +36,12 @@ func FromAlpha2(a2 string) (Country, error) {
 
 	index := f<<5 + s
 
-	c := alpha2SliceLookup[index]
+	c := alpha2Lookup[index]
 	if c == 0 {
 		return Country{}, ErrNoSuchCountry
 	}
 
-	return structSlice[c], nil
+	return countries[c], nil
 }
 
 func FromAlpha3(a3 string) (Country, error) {
@@ -60,10 +60,11 @@ func FromAlpha3(a3 string) (Country, error) {
 	}
 
 	index := f<<10 + s<<5 + t
-	c := alpha3SliceLookup[index]
+
+	c := alpha3Lookup[index]
 	if c == 0 {
 		return Country{}, ErrNoSuchCountry
 	}
 
-	return structSlice[c], nil
+	return countries[c], nil
 }

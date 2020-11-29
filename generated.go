@@ -1,197 +1,11 @@
 package iso3166_1
 
 var (
-	Kenya = Country{
-		Alpha2:  "KE",
-		Alpha3:  "KEN",
-		Name:    "Kenya",
-		Numeric: 404,
-	}
-	Rwanda = Country{
-		Alpha2:  "RW",
-		Alpha3:  "RWA",
-		Name:    "Rwanda",
-		Numeric: 646,
-	}
-	Bahrain = Country{
-		Alpha2:  "BH",
-		Alpha3:  "BHR",
-		Name:    "Bahrain",
-		Numeric: 48,
-	}
-	Thailand = Country{
-		Alpha2:  "TH",
-		Alpha3:  "THA",
-		Name:    "Thailand",
-		Numeric: 764,
-	}
-	Australia = Country{
-		Alpha2:  "AU",
-		Alpha3:  "AUS",
-		Name:    "Australia",
-		Numeric: 36,
-	}
-	Cameroon = Country{
-		Alpha2:  "CM",
-		Alpha3:  "CMR",
-		Name:    "Cameroon",
-		Numeric: 120,
-	}
-	Comoros = Country{
-		Alpha2:  "KM",
-		Alpha3:  "COM",
-		Name:    "Comoros (the)",
-		Numeric: 174,
-	}
-	CostaRica = Country{
-		Alpha2:  "CR",
-		Alpha3:  "CRI",
-		Name:    "Costa Rica",
-		Numeric: 188,
-	}
-	WesternSahara = Country{
-		Alpha2:  "EH",
-		Alpha3:  "ESH",
-		Name:    "Western Sahara",
-		Numeric: 732,
-	}
-	Samoa = Country{
-		Alpha2:  "WS",
-		Alpha3:  "WSM",
-		Name:    "Samoa",
-		Numeric: 882,
-	}
-	Croatia = Country{
-		Alpha2:  "HR",
-		Alpha3:  "HRV",
-		Name:    "Croatia",
-		Numeric: 191,
-	}
-	Georgia = Country{
-		Alpha2:  "GE",
-		Alpha3:  "GEO",
-		Name:    "Georgia",
-		Numeric: 268,
-	}
-	Indonesia = Country{
-		Alpha2:  "ID",
-		Alpha3:  "IDN",
-		Name:    "Indonesia",
-		Numeric: 360,
-	}
-	Malawi = Country{
-		Alpha2:  "MW",
-		Alpha3:  "MWI",
-		Name:    "Malawi",
-		Numeric: 454,
-	}
-	Switzerland = Country{
-		Alpha2:  "CH",
-		Alpha3:  "CHE",
-		Name:    "Switzerland",
-		Numeric: 756,
-	}
-	UnitedArabEmirates = Country{
-		Alpha2:  "AE",
-		Alpha3:  "ARE",
-		Name:    "United Arab Emirates (the)",
-		Numeric: 784,
-	}
-	BouvetIsland = Country{
-		Alpha2:  "BV",
-		Alpha3:  "BVT",
-		Name:    "Bouvet Island",
-		Numeric: 74,
-	}
-	CôteDIvoire = Country{
-		Alpha2:  "CI",
-		Alpha3:  "CIV",
-		Name:    "Côte d'Ivoire",
-		Numeric: 384,
-	}
-	Madagascar = Country{
-		Alpha2:  "MG",
-		Alpha3:  "MDG",
-		Name:    "Madagascar",
-		Numeric: 450,
-	}
-	Morocco = Country{
-		Alpha2:  "MA",
-		Alpha3:  "MAR",
-		Name:    "Morocco",
-		Numeric: 504,
-	}
-	Tajikistan = Country{
-		Alpha2:  "TJ",
-		Alpha3:  "TJK",
-		Name:    "Tajikistan",
-		Numeric: 762,
-	}
-	Tokelau = Country{
-		Alpha2:  "TK",
-		Alpha3:  "TKL",
-		Name:    "Tokelau",
-		Numeric: 772,
-	}
-	Belarus = Country{
-		Alpha2:  "BY",
-		Alpha3:  "BLR",
-		Name:    "Belarus",
-		Numeric: 112,
-	}
-	ÅlandIslands = Country{
-		Alpha2:  "AX",
-		Alpha3:  "ALA",
-		Name:    "Åland Islands",
-		Numeric: 248,
-	}
-	Gibraltar = Country{
-		Alpha2:  "GI",
-		Alpha3:  "GIB",
-		Name:    "Gibraltar",
-		Numeric: 292,
-	}
-	Jordan = Country{
-		Alpha2:  "JO",
-		Alpha3:  "JOR",
-		Name:    "Jordan",
-		Numeric: 400,
-	}
-	Mali = Country{
-		Alpha2:  "ML",
-		Alpha3:  "MLI",
-		Name:    "Mali",
-		Numeric: 466,
-	}
-	Aruba = Country{
-		Alpha2:  "AW",
-		Alpha3:  "ABW",
-		Name:    "Aruba",
-		Numeric: 533,
-	}
-	SouthSudan = Country{
-		Alpha2:  "SS",
-		Alpha3:  "SSD",
-		Name:    "South Sudan",
-		Numeric: 728,
-	}
-	Tonga = Country{
-		Alpha2:  "TO",
-		Alpha3:  "TON",
-		Name:    "Tonga",
-		Numeric: 776,
-	}
-	Azerbaijan = Country{
-		Alpha2:  "AZ",
-		Alpha3:  "AZE",
-		Name:    "Azerbaijan",
-		Numeric: 31,
-	}
-	Curaçao = Country{
-		Alpha2:  "CW",
-		Alpha3:  "CUW",
-		Name:    "Curaçao",
-		Numeric: 531,
+	Guam = Country{
+		Alpha2:  "GU",
+		Alpha3:  "GUM",
+		Name:    "Guam",
+		Numeric: 316,
 	}
 	Niger = Country{
 		Alpha2:  "NE",
@@ -199,1253 +13,17 @@ var (
 		Name:    "Niger (the)",
 		Numeric: 562,
 	}
-	Suriname = Country{
-		Alpha2:  "SR",
-		Alpha3:  "SUR",
-		Name:    "Suriname",
-		Numeric: 740,
-	}
-	Maldives = Country{
-		Alpha2:  "MV",
-		Alpha3:  "MDV",
-		Name:    "Maldives",
-		Numeric: 462,
-	}
-	Mexico = Country{
-		Alpha2:  "MX",
-		Alpha3:  "MEX",
-		Name:    "Mexico",
-		Numeric: 484,
-	}
-	Antarctica = Country{
-		Alpha2:  "AQ",
-		Alpha3:  "ATA",
-		Name:    "Antarctica",
-		Numeric: 10,
-	}
-	Oman = Country{
-		Alpha2:  "OM",
-		Alpha3:  "OMN",
-		Name:    "Oman",
-		Numeric: 512,
-	}
-	Jersey = Country{
-		Alpha2:  "JE",
-		Alpha3:  "JEY",
-		Name:    "Jersey",
-		Numeric: 832,
-	}
-	Bhutan = Country{
-		Alpha2:  "BT",
-		Alpha3:  "BTN",
-		Name:    "Bhutan",
-		Numeric: 64,
-	}
-	FalklandIslands = Country{
-		Alpha2:  "FK",
-		Alpha3:  "FLK",
-		Name:    "Falkland Islands (the) [Malvinas]",
-		Numeric: 238,
-	}
-	Norway = Country{
-		Alpha2:  "NO",
-		Alpha3:  "NOR",
-		Name:    "Norway",
-		Numeric: 578,
-	}
-	Réunion = Country{
-		Alpha2:  "RE",
-		Alpha3:  "REU",
-		Name:    "Réunion",
-		Numeric: 638,
-	}
-	Egypt = Country{
-		Alpha2:  "EG",
-		Alpha3:  "EGY",
-		Name:    "Egypt",
-		Numeric: 818,
-	}
 	Bahamas = Country{
 		Alpha2:  "BS",
 		Alpha3:  "BHS",
 		Name:    "Bahamas (the)",
 		Numeric: 44,
 	}
-	Ethiopia = Country{
-		Alpha2:  "ET",
-		Alpha3:  "ETH",
-		Name:    "Ethiopia",
-		Numeric: 231,
-	}
-	HolySee = Country{
-		Alpha2:  "VA",
-		Alpha3:  "VAT",
-		Name:    "Holy See (the)",
-		Numeric: 336,
-	}
-	Luxembourg = Country{
-		Alpha2:  "LU",
-		Alpha3:  "LUX",
-		Name:    "Luxembourg",
-		Numeric: 442,
-	}
-	Turkmenistan = Country{
-		Alpha2:  "TM",
-		Alpha3:  "TKM",
-		Name:    "Turkmenistan",
-		Numeric: 795,
-	}
-	Ukraine = Country{
-		Alpha2:  "UA",
-		Alpha3:  "UKR",
-		Name:    "Ukraine",
-		Numeric: 804,
-	}
-	Belgium = Country{
-		Alpha2:  "BE",
-		Alpha3:  "BEL",
-		Name:    "Belgium",
-		Numeric: 56,
-	}
-	Canada = Country{
-		Alpha2:  "CA",
-		Alpha3:  "CAN",
-		Name:    "Canada",
-		Numeric: 124,
-	}
-	Latvia = Country{
-		Alpha2:  "LV",
-		Alpha3:  "LVA",
-		Name:    "Latvia",
-		Numeric: 428,
-	}
-	Montserrat = Country{
-		Alpha2:  "MS",
-		Alpha3:  "MSR",
-		Name:    "Montserrat",
-		Numeric: 500,
-	}
-	EquatorialGuinea = Country{
-		Alpha2:  "GQ",
-		Alpha3:  "GNQ",
-		Name:    "Equatorial Guinea",
-		Numeric: 226,
-	}
-	Gabon = Country{
-		Alpha2:  "GA",
-		Alpha3:  "GAB",
-		Name:    "Gabon",
-		Numeric: 266,
-	}
-	India = Country{
-		Alpha2:  "IN",
-		Alpha3:  "IND",
-		Name:    "India",
-		Numeric: 356,
-	}
-	NorthernMarianaIslands = Country{
-		Alpha2:  "MP",
-		Alpha3:  "MNP",
-		Name:    "Northern Mariana Islands (the)",
-		Numeric: 580,
-	}
-	Turkey = Country{
-		Alpha2:  "TR",
-		Alpha3:  "TUR",
-		Name:    "Turkey",
-		Numeric: 792,
-	}
-	AntiguaAndBarbuda = Country{
-		Alpha2:  "AG",
-		Alpha3:  "ATG",
-		Name:    "Antigua and Barbuda",
-		Numeric: 28,
-	}
-	CaboVerde = Country{
-		Alpha2:  "CV",
-		Alpha3:  "CPV",
-		Name:    "Cabo Verde",
-		Numeric: 132,
-	}
-	Portugal = Country{
-		Alpha2:  "PT",
-		Alpha3:  "PRT",
-		Name:    "Portugal",
-		Numeric: 620,
-	}
-	HongKong = Country{
-		Alpha2:  "HK",
-		Alpha3:  "HKG",
-		Name:    "Hong Kong",
-		Numeric: 344,
-	}
-	LaoPeoplesDemocraticRepublic = Country{
-		Alpha2:  "LA",
-		Alpha3:  "LAO",
-		Name:    "Lao People's Democratic Republic (the)",
-		Numeric: 418,
-	}
-	SaoTomeAndPrincipe = Country{
-		Alpha2:  "ST",
-		Alpha3:  "STP",
-		Name:    "Sao Tome and Principe",
-		Numeric: 678,
-	}
-	FederatedStatesOfMicronesia = Country{
-		Alpha2:  "FM",
-		Alpha3:  "FSM",
-		Name:    "Micronesia (Federated States of)",
-		Numeric: 583,
-	}
-	Slovakia = Country{
-		Alpha2:  "SK",
-		Alpha3:  "SVK",
-		Name:    "Slovakia",
-		Numeric: 703,
-	}
-	Uzbekistan = Country{
-		Alpha2:  "UZ",
-		Alpha3:  "UZB",
-		Name:    "Uzbekistan",
-		Numeric: 860,
-	}
-	Albania = Country{
-		Alpha2:  "AL",
-		Alpha3:  "ALB",
-		Name:    "Albania",
-		Numeric: 8,
-	}
-	Argentina = Country{
-		Alpha2:  "AR",
-		Alpha3:  "ARG",
-		Name:    "Argentina",
-		Numeric: 32,
-	}
-	Ecuador = Country{
-		Alpha2:  "EC",
-		Alpha3:  "ECU",
-		Name:    "Ecuador",
-		Numeric: 218,
-	}
-	Liberia = Country{
-		Alpha2:  "LR",
-		Alpha3:  "LBR",
-		Name:    "Liberia",
-		Numeric: 430,
-	}
-	Tuvalu = Country{
-		Alpha2:  "TV",
-		Alpha3:  "TUV",
-		Name:    "Tuvalu",
-		Numeric: 798,
-	}
-	PuertoRico = Country{
-		Alpha2:  "PR",
-		Alpha3:  "PRI",
-		Name:    "Puerto Rico",
-		Numeric: 630,
-	}
-	Guernsey = Country{
-		Alpha2:  "GG",
-		Alpha3:  "GGY",
-		Name:    "Guernsey",
-		Numeric: 831,
-	}
-	Armenia = Country{
-		Alpha2:  "AM",
-		Alpha3:  "ARM",
-		Name:    "Armenia",
-		Numeric: 51,
-	}
-	BritishVirginIslands = Country{
-		Alpha2:  "VG",
-		Alpha3:  "VGB",
-		Name:    "Virgin Islands (British)",
-		Numeric: 92,
-	}
-	FrenchGuiana = Country{
-		Alpha2:  "GF",
-		Alpha3:  "GUF",
-		Name:    "French Guiana",
-		Numeric: 254,
-	}
-	NorfolkIsland = Country{
-		Alpha2:  "NF",
-		Alpha3:  "NFK",
-		Name:    "Norfolk Island",
-		Numeric: 574,
-	}
-	Palau = Country{
-		Alpha2:  "PW",
-		Alpha3:  "PLW",
-		Name:    "Palau",
-		Numeric: 585,
-	}
-	Pakistan = Country{
-		Alpha2:  "PK",
-		Alpha3:  "PAK",
-		Name:    "Pakistan",
-		Numeric: 586,
-	}
-	CentralAfricanRepublic = Country{
-		Alpha2:  "CF",
-		Alpha3:  "CAF",
-		Name:    "Central African Republic (the)",
-		Numeric: 140,
-	}
-	Fiji = Country{
-		Alpha2:  "FJ",
-		Alpha3:  "FJI",
-		Name:    "Fiji",
-		Numeric: 242,
-	}
-	Iraq = Country{
-		Alpha2:  "IQ",
-		Alpha3:  "IRQ",
-		Name:    "Iraq",
-		Numeric: 368,
-	}
-	Libya = Country{
-		Alpha2:  "LY",
-		Alpha3:  "LBY",
-		Name:    "Libya",
-		Numeric: 434,
-	}
-	DutchPartSintMaarten = Country{
-		Alpha2:  "SX",
-		Alpha3:  "SXM",
-		Name:    "Sint Maarten (Dutch part)",
-		Numeric: 534,
-	}
-	VietNam = Country{
-		Alpha2:  "VN",
-		Alpha3:  "VNM",
-		Name:    "Viet Nam",
-		Numeric: 704,
-	}
-	Malta = Country{
-		Alpha2:  "MT",
-		Alpha3:  "MLT",
-		Name:    "Malta",
-		Numeric: 470,
-	}
-	Nauru = Country{
-		Alpha2:  "NR",
-		Alpha3:  "NRU",
-		Name:    "Nauru",
-		Numeric: 520,
-	}
-	Seychelles = Country{
-		Alpha2:  "SC",
-		Alpha3:  "SYC",
-		Name:    "Seychelles",
-		Numeric: 690,
-	}
-	TrinidadAndTobago = Country{
-		Alpha2:  "TT",
-		Alpha3:  "TTO",
-		Name:    "Trinidad and Tobago",
-		Numeric: 780,
-	}
-	IsleOfMan = Country{
-		Alpha2:  "IM",
-		Alpha3:  "IMN",
-		Name:    "Isle of Man",
-		Numeric: 833,
-	}
-	Mayotte = Country{
-		Alpha2:  "YT",
-		Alpha3:  "MYT",
-		Name:    "Mayotte",
-		Numeric: 175,
-	}
-	Cuba = Country{
-		Alpha2:  "CU",
-		Alpha3:  "CUB",
-		Name:    "Cuba",
-		Numeric: 192,
-	}
-	Haiti = Country{
-		Alpha2:  "HT",
-		Alpha3:  "HTI",
-		Name:    "Haiti",
-		Numeric: 332,
-	}
-	HeardIslandAndMcDonaldIslands = Country{
-		Alpha2:  "HM",
-		Alpha3:  "HMD",
-		Name:    "Heard Island and McDonald Islands",
-		Numeric: 334,
-	}
-	Bonaire = Country{
-		Alpha2:  "BQ",
-		Alpha3:  "BES",
-		Name:    "Bonaire, Sint Eustatius and Saba",
-		Numeric: 535,
-	}
-	Peru = Country{
-		Alpha2:  "PE",
-		Alpha3:  "PER",
-		Name:    "Peru",
-		Numeric: 604,
-	}
-	China = Country{
-		Alpha2:  "CN",
-		Alpha3:  "CHN",
-		Name:    "China",
-		Numeric: 156,
-	}
-	Palestine = Country{
-		Alpha2:  "PS",
-		Alpha3:  "PSE",
-		Name:    "Palestine, State of",
-		Numeric: 275,
-	}
-	Greece = Country{
-		Alpha2:  "GR",
-		Alpha3:  "GRC",
-		Name:    "Greece",
-		Numeric: 300,
-	}
-	Guatemala = Country{
-		Alpha2:  "GT",
-		Alpha3:  "GTM",
-		Name:    "Guatemala",
-		Numeric: 320,
-	}
-	Paraguay = Country{
-		Alpha2:  "PY",
-		Alpha3:  "PRY",
-		Name:    "Paraguay",
-		Numeric: 600,
-	}
-	BurkinaFaso = Country{
-		Alpha2:  "BF",
-		Alpha3:  "BFA",
-		Name:    "Burkina Faso",
-		Numeric: 854,
-	}
-	AmericanSamoa = Country{
-		Alpha2:  "AS",
-		Alpha3:  "ASM",
-		Name:    "American Samoa",
-		Numeric: 16,
-	}
-	BruneiDarussalam = Country{
-		Alpha2:  "BN",
-		Alpha3:  "BRN",
-		Name:    "Brunei Darussalam",
-		Numeric: 96,
-	}
-	DominicanRepublic = Country{
-		Alpha2:  "DO",
-		Alpha3:  "DOM",
-		Name:    "Dominican Republic (the)",
-		Numeric: 214,
-	}
-	Estonia = Country{
-		Alpha2:  "EE",
-		Alpha3:  "EST",
-		Name:    "Estonia",
-		Numeric: 233,
-	}
-	MarshallIslands = Country{
-		Alpha2:  "MH",
-		Alpha3:  "MHL",
-		Name:    "Marshall Islands (the)",
-		Numeric: 584,
-	}
-	Somalia = Country{
-		Alpha2:  "SO",
-		Alpha3:  "SOM",
-		Name:    "Somalia",
-		Numeric: 706,
-	}
-	BosniaAndHerzegovina = Country{
-		Alpha2:  "BA",
-		Alpha3:  "BIH",
-		Name:    "Bosnia and Herzegovina",
-		Numeric: 70,
-	}
-	Pitcairn = Country{
-		Alpha2:  "PN",
-		Alpha3:  "PCN",
-		Name:    "Pitcairn",
-		Numeric: 612,
-	}
-	Singapore = Country{
-		Alpha2:  "SG",
-		Alpha3:  "SGP",
-		Name:    "Singapore",
-		Numeric: 702,
-	}
-	Spain = Country{
-		Alpha2:  "ES",
-		Alpha3:  "ESP",
-		Name:    "Spain",
-		Numeric: 724,
-	}
-	FrenchPolynesia = Country{
-		Alpha2:  "PF",
-		Alpha3:  "PYF",
-		Name:    "French Polynesia",
-		Numeric: 258,
-	}
-	Guadeloupe = Country{
-		Alpha2:  "GP",
-		Alpha3:  "GLP",
-		Name:    "Guadeloupe",
-		Numeric: 312,
-	}
-	Israel = Country{
-		Alpha2:  "IL",
-		Alpha3:  "ISR",
-		Name:    "Israel",
-		Numeric: 376,
-	}
-	Nepal = Country{
-		Alpha2:  "NP",
-		Alpha3:  "NPL",
-		Name:    "Nepal",
-		Numeric: 524,
-	}
-	Barbados = Country{
-		Alpha2:  "BB",
-		Alpha3:  "BRB",
-		Name:    "Barbados",
-		Numeric: 52,
-	}
-	Honduras = Country{
-		Alpha2:  "HN",
-		Alpha3:  "HND",
-		Name:    "Honduras",
-		Numeric: 340,
-	}
-	Panama = Country{
-		Alpha2:  "PA",
-		Alpha3:  "PAN",
-		Name:    "Panama",
-		Numeric: 591,
-	}
-	SvalbardAndJanMayen = Country{
-		Alpha2:  "SJ",
-		Alpha3:  "SJM",
-		Name:    "Svalbard and Jan Mayen",
-		Numeric: 744,
-	}
-	USVirginIslands = Country{
-		Alpha2:  "VI",
-		Alpha3:  "VIR",
-		Name:    "Virgin Islands (U.S.)",
-		Numeric: 850,
-	}
-	FaroeIslands = Country{
-		Alpha2:  "FO",
-		Alpha3:  "FRO",
-		Name:    "Faroe Islands (the)",
-		Numeric: 234,
-	}
-	Guam = Country{
-		Alpha2:  "GU",
-		Alpha3:  "GUM",
-		Name:    "Guam",
-		Numeric: 316,
-	}
-	Mongolia = Country{
-		Alpha2:  "MN",
-		Alpha3:  "MNG",
-		Name:    "Mongolia",
-		Numeric: 496,
-	}
-	SouthGeorgiaAndTheSouthSandwichIslands = Country{
-		Alpha2:  "GS",
-		Alpha3:  "SGS",
-		Name:    "South Georgia and the South Sandwich Islands",
-		Numeric: 239,
-	}
-	Martinique = Country{
-		Alpha2:  "MQ",
-		Alpha3:  "MTQ",
-		Name:    "Martinique",
-		Numeric: 474,
-	}
-	Mozambique = Country{
-		Alpha2:  "MZ",
-		Alpha3:  "MOZ",
-		Name:    "Mozambique",
-		Numeric: 508,
-	}
-	TimorLeste = Country{
-		Alpha2:  "TL",
-		Alpha3:  "TLS",
-		Name:    "Timor-Leste",
-		Numeric: 626,
-	}
-	SaintBarthélemy = Country{
-		Alpha2:  "BL",
-		Alpha3:  "BLM",
-		Name:    "Saint Barthélemy",
-		Numeric: 652,
-	}
-	Bermuda = Country{
-		Alpha2:  "BM",
-		Alpha3:  "BMU",
-		Name:    "Bermuda",
-		Numeric: 60,
-	}
-	Chile = Country{
-		Alpha2:  "CL",
-		Alpha3:  "CHL",
-		Name:    "Chile",
-		Numeric: 152,
-	}
-	DemocraticPeopleSRepublicOfKorea = Country{
-		Alpha2:  "KP",
-		Alpha3:  "PRK",
-		Name:    "Korea (the Democratic People's Republic of)",
-		Numeric: 408,
-	}
-	SouthAfrica = Country{
-		Alpha2:  "ZA",
-		Alpha3:  "ZAF",
-		Name:    "South Africa",
-		Numeric: 710,
-	}
-	Eswatini = Country{
-		Alpha2:  "SZ",
-		Alpha3:  "SWZ",
-		Name:    "Eswatini",
-		Numeric: 748,
-	}
-	Bulgaria = Country{
-		Alpha2:  "BG",
-		Alpha3:  "BGR",
-		Name:    "Bulgaria",
-		Numeric: 100,
-	}
-	IslamicRepublicOfIran = Country{
-		Alpha2:  "IR",
-		Alpha3:  "IRN",
-		Name:    "Iran (Islamic Republic of)",
-		Numeric: 364,
-	}
-	Japan = Country{
-		Alpha2:  "JP",
-		Alpha3:  "JPN",
-		Name:    "Japan",
-		Numeric: 392,
-	}
-	Liechtenstein = Country{
-		Alpha2:  "LI",
-		Alpha3:  "LIE",
-		Name:    "Liechtenstein",
-		Numeric: 438,
-	}
-	Philippines = Country{
-		Alpha2:  "PH",
-		Alpha3:  "PHL",
-		Name:    "Philippines (the)",
-		Numeric: 608,
-	}
-	SaintKittsAndNevis = Country{
-		Alpha2:  "KN",
-		Alpha3:  "KNA",
-		Name:    "Saint Kitts and Nevis",
-		Numeric: 659,
-	}
-	Botswana = Country{
-		Alpha2:  "BW",
-		Alpha3:  "BWA",
-		Name:    "Botswana",
-		Numeric: 72,
-	}
-	SaintVincentAndTheGrenadines = Country{
-		Alpha2:  "VC",
-		Alpha3:  "VCT",
-		Name:    "Saint Vincent and the Grenadines",
-		Numeric: 670,
-	}
-	Algeria = Country{
-		Alpha2:  "DZ",
-		Alpha3:  "DZA",
-		Name:    "Algeria",
-		Numeric: 12,
-	}
-	Guinea = Country{
-		Alpha2:  "GN",
-		Alpha3:  "GIN",
-		Name:    "Guinea",
-		Numeric: 324,
-	}
-	RussianFederation = Country{
-		Alpha2:  "RU",
-		Alpha3:  "RUS",
-		Name:    "Russian Federation (the)",
-		Numeric: 643,
-	}
-	BolivarianRepublicOfVenezuela = Country{
-		Alpha2:  "VE",
-		Alpha3:  "VEN",
-		Name:    "Venezuela (Bolivarian Republic of)",
-		Numeric: 862,
-	}
-	SriLanka = Country{
-		Alpha2:  "LK",
-		Alpha3:  "LKA",
-		Name:    "Sri Lanka",
-		Numeric: 144,
-	}
-	SierraLeone = Country{
-		Alpha2:  "SL",
-		Alpha3:  "SLE",
-		Name:    "Sierra Leone",
-		Numeric: 694,
-	}
-	Uruguay = Country{
-		Alpha2:  "UY",
-		Alpha3:  "URY",
-		Name:    "Uruguay",
-		Numeric: 858,
-	}
-	Cyprus = Country{
-		Alpha2:  "CY",
-		Alpha3:  "CYP",
-		Name:    "Cyprus",
-		Numeric: 196,
-	}
-	Sweden = Country{
-		Alpha2:  "SE",
-		Alpha3:  "SWE",
-		Name:    "Sweden",
-		Numeric: 752,
-	}
-	DemocraticRepublicOfTheCongo = Country{
-		Alpha2:  "CD",
-		Alpha3:  "COD",
-		Name:    "Congo (the Democratic Republic of the)",
-		Numeric: 180,
-	}
-	Ireland = Country{
-		Alpha2:  "IE",
-		Alpha3:  "IRL",
-		Name:    "Ireland",
-		Numeric: 372,
-	}
-	SaintLucia = Country{
-		Alpha2:  "LC",
-		Alpha3:  "LCA",
-		Name:    "Saint Lucia",
-		Numeric: 662,
-	}
-	Ghana = Country{
-		Alpha2:  "GH",
-		Alpha3:  "GHA",
-		Name:    "Ghana",
-		Numeric: 288,
-	}
-	Zambia = Country{
-		Alpha2:  "ZM",
-		Alpha3:  "ZMB",
-		Name:    "Zambia",
-		Numeric: 894,
-	}
-	Grenada = Country{
-		Alpha2:  "GD",
-		Alpha3:  "GRD",
-		Name:    "Grenada",
-		Numeric: 308,
-	}
-	Netherlands = Country{
-		Alpha2:  "NL",
-		Alpha3:  "NLD",
-		Name:    "Netherlands (the)",
-		Numeric: 528,
-	}
-	FrenchPartSaintMartin = Country{
-		Alpha2:  "MF",
-		Alpha3:  "MAF",
-		Name:    "Saint Martin (French part)",
-		Numeric: 663,
-	}
-	Afghanistan = Country{
-		Alpha2:  "AF",
-		Alpha3:  "AFG",
-		Name:    "Afghanistan",
-		Numeric: 4,
-	}
-	Austria = Country{
-		Alpha2:  "AT",
-		Alpha3:  "AUT",
-		Name:    "Austria",
-		Numeric: 40,
-	}
-	ProvinceOfChinaTaiwan = Country{
-		Alpha2:  "TW",
-		Alpha3:  "TWN",
-		Name:    "Taiwan (Province of China)",
-		Numeric: 158,
-	}
-	Macao = Country{
-		Alpha2:  "MO",
-		Alpha3:  "MAC",
-		Name:    "Macao",
-		Numeric: 446,
-	}
-	Nigeria = Country{
-		Alpha2:  "NG",
-		Alpha3:  "NGA",
-		Name:    "Nigeria",
-		Numeric: 566,
-	}
-	BritishIndianOceanTerritory = Country{
-		Alpha2:  "IO",
-		Alpha3:  "IOT",
-		Name:    "British Indian Ocean Territory (the)",
-		Numeric: 86,
-	}
-	Djibouti = Country{
-		Alpha2:  "DJ",
-		Alpha3:  "DJI",
-		Name:    "Djibouti",
-		Numeric: 262,
-	}
-	Kuwait = Country{
-		Alpha2:  "KW",
-		Alpha3:  "KWT",
-		Name:    "Kuwait",
-		Numeric: 414,
-	}
-	Poland = Country{
-		Alpha2:  "PL",
-		Alpha3:  "POL",
-		Name:    "Poland",
-		Numeric: 616,
-	}
-	SolomonIslands = Country{
-		Alpha2:  "SB",
-		Alpha3:  "SLB",
-		Name:    "Solomon Islands",
-		Numeric: 90,
-	}
-	Congo = Country{
-		Alpha2:  "CG",
-		Alpha3:  "COG",
-		Name:    "Congo (the)",
-		Numeric: 178,
-	}
-	Dominica = Country{
-		Alpha2:  "DM",
-		Alpha3:  "DMA",
-		Name:    "Dominica",
-		Numeric: 212,
-	}
-	Iceland = Country{
-		Alpha2:  "IS",
-		Alpha3:  "ISL",
-		Name:    "Iceland",
-		Numeric: 352,
-	}
-	Niue = Country{
-		Alpha2:  "NU",
-		Alpha3:  "NIU",
-		Name:    "Niue",
-		Numeric: 570,
-	}
-	ElSalvador = Country{
-		Alpha2:  "SV",
-		Alpha3:  "SLV",
-		Name:    "El Salvador",
-		Numeric: 222,
-	}
-	Nicaragua = Country{
-		Alpha2:  "NI",
-		Alpha3:  "NIC",
-		Name:    "Nicaragua",
-		Numeric: 558,
-	}
-	Romania = Country{
-		Alpha2:  "RO",
-		Alpha3:  "ROU",
-		Name:    "Romania",
-		Numeric: 642,
-	}
-	Eritrea = Country{
-		Alpha2:  "ER",
-		Alpha3:  "ERI",
-		Name:    "Eritrea",
-		Numeric: 232,
-	}
-	Hungary = Country{
-		Alpha2:  "HU",
-		Alpha3:  "HUN",
-		Name:    "Hungary",
-		Numeric: 348,
-	}
-	Anguilla = Country{
-		Alpha2:  "AI",
-		Alpha3:  "AIA",
-		Name:    "Anguilla",
-		Numeric: 660,
-	}
-	CaymanIslands = Country{
-		Alpha2:  "KY",
-		Alpha3:  "CYM",
-		Name:    "Cayman Islands (the)",
-		Numeric: 136,
-	}
-	SaudiArabia = Country{
-		Alpha2:  "SA",
-		Alpha3:  "SAU",
-		Name:    "Saudi Arabia",
-		Numeric: 682,
-	}
-	Colombia = Country{
-		Alpha2:  "CO",
-		Alpha3:  "COL",
-		Name:    "Colombia",
-		Numeric: 170,
-	}
-	Denmark = Country{
-		Alpha2:  "DK",
-		Alpha3:  "DNK",
-		Name:    "Denmark",
-		Numeric: 208,
-	}
-	Finland = Country{
-		Alpha2:  "FI",
-		Alpha3:  "FIN",
-		Name:    "Finland",
-		Numeric: 246,
-	}
-	Serbia = Country{
-		Alpha2:  "RS",
-		Alpha3:  "SRB",
-		Name:    "Serbia",
-		Numeric: 688,
-	}
-	Yemen = Country{
-		Alpha2:  "YE",
-		Alpha3:  "YEM",
-		Name:    "Yemen",
-		Numeric: 887,
-	}
-	Kiribati = Country{
-		Alpha2:  "KI",
-		Alpha3:  "KIR",
-		Name:    "Kiribati",
-		Numeric: 296,
-	}
-	Greenland = Country{
-		Alpha2:  "GL",
-		Alpha3:  "GRL",
-		Name:    "Greenland",
-		Numeric: 304,
-	}
-	Andorra = Country{
-		Alpha2:  "AD",
-		Alpha3:  "AND",
-		Name:    "Andorra",
-		Numeric: 20,
-	}
-	Brazil = Country{
-		Alpha2:  "BR",
-		Alpha3:  "BRA",
-		Name:    "Brazil",
-		Numeric: 76,
-	}
-	Jamaica = Country{
-		Alpha2:  "JM",
-		Alpha3:  "JAM",
-		Name:    "Jamaica",
-		Numeric: 388,
-	}
-	Tunisia = Country{
-		Alpha2:  "TN",
-		Alpha3:  "TUN",
-		Name:    "Tunisia",
-		Numeric: 788,
-	}
-	WallisAndFutuna = Country{
-		Alpha2:  "WF",
-		Alpha3:  "WLF",
-		Name:    "Wallis and Futuna",
-		Numeric: 876,
-	}
-	Chad = Country{
-		Alpha2:  "TD",
-		Alpha3:  "TCD",
-		Name:    "Chad",
-		Numeric: 148,
-	}
-	Czechia = Country{
-		Alpha2:  "CZ",
-		Alpha3:  "CZE",
-		Name:    "Czechia",
-		Numeric: 203,
-	}
-	Kazakhstan = Country{
-		Alpha2:  "KZ",
-		Alpha3:  "KAZ",
-		Name:    "Kazakhstan",
-		Numeric: 398,
-	}
-	Lebanon = Country{
-		Alpha2:  "LB",
-		Alpha3:  "LBN",
-		Name:    "Lebanon",
-		Numeric: 422,
-	}
-	NewCaledonia = Country{
-		Alpha2:  "NC",
-		Alpha3:  "NCL",
-		Name:    "New Caledonia",
-		Numeric: 540,
-	}
-	Mauritius = Country{
-		Alpha2:  "MU",
-		Alpha3:  "MUS",
-		Name:    "Mauritius",
-		Numeric: 480,
-	}
-	Namibia = Country{
-		Alpha2:  "NA",
-		Alpha3:  "NAM",
-		Name:    "Namibia",
-		Numeric: 516,
-	}
-	Bangladesh = Country{
-		Alpha2:  "BD",
-		Alpha3:  "BGD",
-		Name:    "Bangladesh",
-		Numeric: 50,
-	}
-	Myanmar = Country{
-		Alpha2:  "MM",
-		Alpha3:  "MMR",
-		Name:    "Myanmar",
-		Numeric: 104,
-	}
-	Guyana = Country{
-		Alpha2:  "GY",
-		Alpha3:  "GUY",
-		Name:    "Guyana",
-		Numeric: 328,
-	}
-	SaintPierreAndMiquelon = Country{
-		Alpha2:  "PM",
-		Alpha3:  "SPM",
-		Name:    "Saint Pierre and Miquelon",
-		Numeric: 666,
-	}
-	PlurinationalStateOfBolivia = Country{
-		Alpha2:  "BO",
-		Alpha3:  "BOL",
-		Name:    "Bolivia (Plurinational State of)",
-		Numeric: 68,
-	}
-	Gambia = Country{
-		Alpha2:  "GM",
-		Alpha3:  "GMB",
-		Name:    "Gambia (the)",
-		Numeric: 270,
-	}
-	Monaco = Country{
-		Alpha2:  "MC",
-		Alpha3:  "MCO",
-		Name:    "Monaco",
-		Numeric: 492,
-	}
-	Montenegro = Country{
-		Alpha2:  "ME",
-		Alpha3:  "MNE",
-		Name:    "Montenegro",
-		Numeric: 499,
-	}
-	Togo = Country{
-		Alpha2:  "TG",
-		Alpha3:  "TGO",
-		Name:    "Togo",
-		Numeric: 768,
-	}
-	Kyrgyzstan = Country{
-		Alpha2:  "KG",
-		Alpha3:  "KGZ",
-		Name:    "Kyrgyzstan",
-		Numeric: 417,
-	}
-	Lithuania = Country{
-		Alpha2:  "LT",
-		Alpha3:  "LTU",
-		Name:    "Lithuania",
-		Numeric: 440,
-	}
-	PapuaNewGuinea = Country{
-		Alpha2:  "PG",
-		Alpha3:  "PNG",
-		Name:    "Papua New Guinea",
-		Numeric: 598,
-	}
-	TurksAndCaicosIslands = Country{
-		Alpha2:  "TC",
-		Alpha3:  "TCA",
-		Name:    "Turks and Caicos Islands (the)",
-		Numeric: 796,
-	}
-	UnitedKingdomOfGreatBritainAndNorthernIreland = Country{
-		Alpha2:  "GB",
-		Alpha3:  "GBR",
-		Name:    "United Kingdom of Great Britain and Northern Ireland (the)",
-		Numeric: 826,
-	}
-	Belize = Country{
-		Alpha2:  "BZ",
-		Alpha3:  "BLZ",
-		Name:    "Belize",
-		Numeric: 84,
-	}
-	Qatar = Country{
-		Alpha2:  "QA",
-		Alpha3:  "QAT",
-		Name:    "Qatar",
-		Numeric: 634,
-	}
-	Tanzania = Country{
-		Alpha2:  "TZ",
-		Alpha3:  "TZA",
-		Name:    "Tanzania, the United Republic of",
-		Numeric: 834,
-	}
-	Lesotho = Country{
-		Alpha2:  "LS",
-		Alpha3:  "LSO",
-		Name:    "Lesotho",
-		Numeric: 426,
-	}
-	FrenchSouthernTerritories = Country{
-		Alpha2:  "TF",
-		Alpha3:  "ATF",
-		Name:    "French Southern Territories (the)",
-		Numeric: 260,
-	}
-	Burundi = Country{
-		Alpha2:  "BI",
-		Alpha3:  "BDI",
-		Name:    "Burundi",
-		Numeric: 108,
-	}
-	ChristmasIsland = Country{
-		Alpha2:  "CX",
-		Alpha3:  "CXR",
-		Name:    "Christmas Island",
-		Numeric: 162,
-	}
-	SaintHelena = Country{
-		Alpha2:  "SH",
-		Alpha3:  "SHN",
-		Name:    "Saint Helena, Ascension and Tristan da Cunha",
-		Numeric: 654,
-	}
-	Benin = Country{
-		Alpha2:  "BJ",
-		Alpha3:  "BEN",
-		Name:    "Benin",
-		Numeric: 204,
-	}
-	Germany = Country{
-		Alpha2:  "DE",
-		Alpha3:  "DEU",
-		Name:    "Germany",
-		Numeric: 276,
-	}
-	RepublicOfKorea = Country{
-		Alpha2:  "KR",
-		Alpha3:  "KOR",
-		Name:    "Korea (the Republic of)",
-		Numeric: 410,
-	}
-	Malaysia = Country{
-		Alpha2:  "MY",
-		Alpha3:  "MYS",
-		Name:    "Malaysia",
-		Numeric: 458,
-	}
-	Mauritania = Country{
-		Alpha2:  "MR",
-		Alpha3:  "MRT",
-		Name:    "Mauritania",
-		Numeric: 478,
-	}
-	Slovenia = Country{
-		Alpha2:  "SI",
-		Alpha3:  "SVN",
-		Name:    "Slovenia",
-		Numeric: 705,
-	}
-	Cambodia = Country{
-		Alpha2:  "KH",
-		Alpha3:  "KHM",
-		Name:    "Cambodia",
-		Numeric: 116,
-	}
-	CookIslands = Country{
-		Alpha2:  "CK",
-		Alpha3:  "COK",
-		Name:    "Cook Islands (the)",
-		Numeric: 184,
-	}
-	NewZealand = Country{
-		Alpha2:  "NZ",
-		Alpha3:  "NZL",
-		Name:    "New Zealand",
-		Numeric: 554,
-	}
-	SanMarino = Country{
-		Alpha2:  "SM",
-		Alpha3:  "SMR",
-		Name:    "San Marino",
-		Numeric: 674,
-	}
-	France = Country{
-		Alpha2:  "FR",
-		Alpha3:  "FRA",
-		Name:    "France",
-		Numeric: 250,
-	}
-	Italy = Country{
-		Alpha2:  "IT",
-		Alpha3:  "ITA",
-		Name:    "Italy",
-		Numeric: 380,
-	}
-	GuineaBissau = Country{
-		Alpha2:  "GW",
-		Alpha3:  "GNB",
-		Name:    "Guinea-Bissau",
-		Numeric: 624,
-	}
-	RepublicOfMoldova = Country{
-		Alpha2:  "MD",
-		Alpha3:  "MDA",
-		Name:    "Moldova (the Republic of)",
-		Numeric: 498,
-	}
-	SyrianArabRepublic = Country{
-		Alpha2:  "SY",
-		Alpha3:  "SYR",
-		Name:    "Syrian Arab Republic (the)",
-		Numeric: 760,
-	}
-	Uganda = Country{
-		Alpha2:  "UG",
-		Alpha3:  "UGA",
-		Name:    "Uganda",
-		Numeric: 800,
-	}
-	Angola = Country{
-		Alpha2:  "AO",
-		Alpha3:  "AGO",
-		Name:    "Angola",
-		Numeric: 24,
+	Switzerland = Country{
+		Alpha2:  "CH",
+		Alpha3:  "CHE",
+		Name:    "Switzerland",
+		Numeric: 756,
 	}
 	NorthMacedonia = Country{
 		Alpha2:  "MK",
@@ -1453,29 +31,281 @@ var (
 		Name:    "North Macedonia",
 		Numeric: 807,
 	}
-	Vanuatu = Country{
-		Alpha2:  "VU",
-		Alpha3:  "VUT",
-		Name:    "Vanuatu",
-		Numeric: 548,
+	Gabon = Country{
+		Alpha2:  "GA",
+		Alpha3:  "GAB",
+		Name:    "Gabon",
+		Numeric: 266,
 	}
-	UnitedStatesMinorOutlyingIslands = Country{
-		Alpha2:  "UM",
-		Alpha3:  "UMI",
-		Name:    "United States Minor Outlying Islands (the)",
-		Numeric: 581,
+	VietNam = Country{
+		Alpha2:  "VN",
+		Alpha3:  "VNM",
+		Name:    "Viet Nam",
+		Numeric: 704,
 	}
-	Senegal = Country{
-		Alpha2:  "SN",
-		Alpha3:  "SEN",
-		Name:    "Senegal",
-		Numeric: 686,
+	SierraLeone = Country{
+		Alpha2:  "SL",
+		Alpha3:  "SLE",
+		Name:    "Sierra Leone",
+		Numeric: 694,
 	}
-	KeelingCocos = Country{
-		Alpha2:  "CC",
-		Alpha3:  "CCK",
-		Name:    "Cocos (Keeling) Islands (the)",
-		Numeric: 166,
+	Bhutan = Country{
+		Alpha2:  "BT",
+		Alpha3:  "BTN",
+		Name:    "Bhutan",
+		Numeric: 64,
+	}
+	SouthGeorgiaAndTheSouthSandwichIslands = Country{
+		Alpha2:  "GS",
+		Alpha3:  "SGS",
+		Name:    "South Georgia and the South Sandwich Islands",
+		Numeric: 239,
+	}
+	Eswatini = Country{
+		Alpha2:  "SZ",
+		Alpha3:  "SWZ",
+		Name:    "Eswatini",
+		Numeric: 748,
+	}
+	Madagascar = Country{
+		Alpha2:  "MG",
+		Alpha3:  "MDG",
+		Name:    "Madagascar",
+		Numeric: 450,
+	}
+	Bonaire = Country{
+		Alpha2:  "BQ",
+		Alpha3:  "BES",
+		Name:    "Bonaire, Sint Eustatius and Saba",
+		Numeric: 535,
+	}
+	Bangladesh = Country{
+		Alpha2:  "BD",
+		Alpha3:  "BGD",
+		Name:    "Bangladesh",
+		Numeric: 50,
+	}
+	ElSalvador = Country{
+		Alpha2:  "SV",
+		Alpha3:  "SLV",
+		Name:    "El Salvador",
+		Numeric: 222,
+	}
+	Serbia = Country{
+		Alpha2:  "RS",
+		Alpha3:  "SRB",
+		Name:    "Serbia",
+		Numeric: 688,
+	}
+	Gibraltar = Country{
+		Alpha2:  "GI",
+		Alpha3:  "GIB",
+		Name:    "Gibraltar",
+		Numeric: 292,
+	}
+	Peru = Country{
+		Alpha2:  "PE",
+		Alpha3:  "PER",
+		Name:    "Peru",
+		Numeric: 604,
+	}
+	Singapore = Country{
+		Alpha2:  "SG",
+		Alpha3:  "SGP",
+		Name:    "Singapore",
+		Numeric: 702,
+	}
+	Germany = Country{
+		Alpha2:  "DE",
+		Alpha3:  "DEU",
+		Name:    "Germany",
+		Numeric: 276,
+	}
+	Pitcairn = Country{
+		Alpha2:  "PN",
+		Alpha3:  "PCN",
+		Name:    "Pitcairn",
+		Numeric: 612,
+	}
+	SaudiArabia = Country{
+		Alpha2:  "SA",
+		Alpha3:  "SAU",
+		Name:    "Saudi Arabia",
+		Numeric: 682,
+	}
+	Slovakia = Country{
+		Alpha2:  "SK",
+		Alpha3:  "SVK",
+		Name:    "Slovakia",
+		Numeric: 703,
+	}
+	CaymanIslands = Country{
+		Alpha2:  "KY",
+		Alpha3:  "CYM",
+		Name:    "Cayman Islands (the)",
+		Numeric: 136,
+	}
+	SaintBarthélemy = Country{
+		Alpha2:  "BL",
+		Alpha3:  "BLM",
+		Name:    "Saint Barthélemy",
+		Numeric: 652,
+	}
+	ProvinceOfChinaTaiwan = Country{
+		Alpha2:  "TW",
+		Alpha3:  "TWN",
+		Name:    "Taiwan (Province of China)",
+		Numeric: 158,
+	}
+	Dominica = Country{
+		Alpha2:  "DM",
+		Alpha3:  "DMA",
+		Name:    "Dominica",
+		Numeric: 212,
+	}
+	Lebanon = Country{
+		Alpha2:  "LB",
+		Alpha3:  "LBN",
+		Name:    "Lebanon",
+		Numeric: 422,
+	}
+	SanMarino = Country{
+		Alpha2:  "SM",
+		Alpha3:  "SMR",
+		Name:    "San Marino",
+		Numeric: 674,
+	}
+	Zambia = Country{
+		Alpha2:  "ZM",
+		Alpha3:  "ZMB",
+		Name:    "Zambia",
+		Numeric: 894,
+	}
+	Brazil = Country{
+		Alpha2:  "BR",
+		Alpha3:  "BRA",
+		Name:    "Brazil",
+		Numeric: 76,
+	}
+	Belarus = Country{
+		Alpha2:  "BY",
+		Alpha3:  "BLR",
+		Name:    "Belarus",
+		Numeric: 112,
+	}
+	USVirginIslands = Country{
+		Alpha2:  "VI",
+		Alpha3:  "VIR",
+		Name:    "Virgin Islands (U.S.)",
+		Numeric: 850,
+	}
+	FrenchSouthernTerritories = Country{
+		Alpha2:  "TF",
+		Alpha3:  "ATF",
+		Name:    "French Southern Territories (the)",
+		Numeric: 260,
+	}
+	Japan = Country{
+		Alpha2:  "JP",
+		Alpha3:  "JPN",
+		Name:    "Japan",
+		Numeric: 392,
+	}
+	Norway = Country{
+		Alpha2:  "NO",
+		Alpha3:  "NOR",
+		Name:    "Norway",
+		Numeric: 578,
+	}
+	Spain = Country{
+		Alpha2:  "ES",
+		Alpha3:  "ESP",
+		Name:    "Spain",
+		Numeric: 724,
+	}
+	Togo = Country{
+		Alpha2:  "TG",
+		Alpha3:  "TGO",
+		Name:    "Togo",
+		Numeric: 768,
+	}
+	Tunisia = Country{
+		Alpha2:  "TN",
+		Alpha3:  "TUN",
+		Name:    "Tunisia",
+		Numeric: 788,
+	}
+	Uganda = Country{
+		Alpha2:  "UG",
+		Alpha3:  "UGA",
+		Name:    "Uganda",
+		Numeric: 800,
+	}
+	PlurinationalStateOfBolivia = Country{
+		Alpha2:  "BO",
+		Alpha3:  "BOL",
+		Name:    "Bolivia (Plurinational State of)",
+		Numeric: 68,
+	}
+	Nicaragua = Country{
+		Alpha2:  "NI",
+		Alpha3:  "NIC",
+		Name:    "Nicaragua",
+		Numeric: 558,
+	}
+	Uzbekistan = Country{
+		Alpha2:  "UZ",
+		Alpha3:  "UZB",
+		Name:    "Uzbekistan",
+		Numeric: 860,
+	}
+	Belgium = Country{
+		Alpha2:  "BE",
+		Alpha3:  "BEL",
+		Name:    "Belgium",
+		Numeric: 56,
+	}
+	Mayotte = Country{
+		Alpha2:  "YT",
+		Alpha3:  "MYT",
+		Name:    "Mayotte",
+		Numeric: 175,
+	}
+	Austria = Country{
+		Alpha2:  "AT",
+		Alpha3:  "AUT",
+		Name:    "Austria",
+		Numeric: 40,
+	}
+	Oman = Country{
+		Alpha2:  "OM",
+		Alpha3:  "OMN",
+		Name:    "Oman",
+		Numeric: 512,
+	}
+	Cuba = Country{
+		Alpha2:  "CU",
+		Alpha3:  "CUB",
+		Name:    "Cuba",
+		Numeric: 192,
+	}
+	Montenegro = Country{
+		Alpha2:  "ME",
+		Alpha3:  "MNE",
+		Name:    "Montenegro",
+		Numeric: 499,
+	}
+	Guyana = Country{
+		Alpha2:  "GY",
+		Alpha3:  "GUY",
+		Name:    "Guyana",
+		Numeric: 328,
+	}
+	Indonesia = Country{
+		Alpha2:  "ID",
+		Alpha3:  "IDN",
+		Name:    "Indonesia",
+		Numeric: 360,
 	}
 	Zimbabwe = Country{
 		Alpha2:  "ZW",
@@ -1483,11 +313,935 @@ var (
 		Name:    "Zimbabwe",
 		Numeric: 716,
 	}
-	Sudan = Country{
-		Alpha2:  "SD",
-		Alpha3:  "SDN",
-		Name:    "Sudan (the)",
-		Numeric: 729,
+	CookIslands = Country{
+		Alpha2:  "CK",
+		Alpha3:  "COK",
+		Name:    "Cook Islands (the)",
+		Numeric: 184,
+	}
+	Guadeloupe = Country{
+		Alpha2:  "GP",
+		Alpha3:  "GLP",
+		Name:    "Guadeloupe",
+		Numeric: 312,
+	}
+	FederatedStatesOfMicronesia = Country{
+		Alpha2:  "FM",
+		Alpha3:  "FSM",
+		Name:    "Micronesia (Federated States of)",
+		Numeric: 583,
+	}
+	FrenchGuiana = Country{
+		Alpha2:  "GF",
+		Alpha3:  "GUF",
+		Name:    "French Guiana",
+		Numeric: 254,
+	}
+	Grenada = Country{
+		Alpha2:  "GD",
+		Alpha3:  "GRD",
+		Name:    "Grenada",
+		Numeric: 308,
+	}
+	NewZealand = Country{
+		Alpha2:  "NZ",
+		Alpha3:  "NZL",
+		Name:    "New Zealand",
+		Numeric: 554,
+	}
+	WesternSahara = Country{
+		Alpha2:  "EH",
+		Alpha3:  "ESH",
+		Name:    "Western Sahara",
+		Numeric: 732,
+	}
+	BolivarianRepublicOfVenezuela = Country{
+		Alpha2:  "VE",
+		Alpha3:  "VEN",
+		Name:    "Venezuela (Bolivarian Republic of)",
+		Numeric: 862,
+	}
+	Croatia = Country{
+		Alpha2:  "HR",
+		Alpha3:  "HRV",
+		Name:    "Croatia",
+		Numeric: 191,
+	}
+	Mauritania = Country{
+		Alpha2:  "MR",
+		Alpha3:  "MRT",
+		Name:    "Mauritania",
+		Numeric: 478,
+	}
+	Aruba = Country{
+		Alpha2:  "AW",
+		Alpha3:  "ABW",
+		Name:    "Aruba",
+		Numeric: 533,
+	}
+	SaintHelena = Country{
+		Alpha2:  "SH",
+		Alpha3:  "SHN",
+		Name:    "Saint Helena, Ascension and Tristan da Cunha",
+		Numeric: 654,
+	}
+	SaintKittsAndNevis = Country{
+		Alpha2:  "KN",
+		Alpha3:  "KNA",
+		Name:    "Saint Kitts and Nevis",
+		Numeric: 659,
+	}
+	Tokelau = Country{
+		Alpha2:  "TK",
+		Alpha3:  "TKL",
+		Name:    "Tokelau",
+		Numeric: 772,
+	}
+	Uruguay = Country{
+		Alpha2:  "UY",
+		Alpha3:  "URY",
+		Name:    "Uruguay",
+		Numeric: 858,
+	}
+	Myanmar = Country{
+		Alpha2:  "MM",
+		Alpha3:  "MMR",
+		Name:    "Myanmar",
+		Numeric: 104,
+	}
+	Lithuania = Country{
+		Alpha2:  "LT",
+		Alpha3:  "LTU",
+		Name:    "Lithuania",
+		Numeric: 440,
+	}
+	Tonga = Country{
+		Alpha2:  "TO",
+		Alpha3:  "TON",
+		Name:    "Tonga",
+		Numeric: 776,
+	}
+	Egypt = Country{
+		Alpha2:  "EG",
+		Alpha3:  "EGY",
+		Name:    "Egypt",
+		Numeric: 818,
+	}
+	Congo = Country{
+		Alpha2:  "CG",
+		Alpha3:  "COG",
+		Name:    "Congo (the)",
+		Numeric: 178,
+	}
+	Benin = Country{
+		Alpha2:  "BJ",
+		Alpha3:  "BEN",
+		Name:    "Benin",
+		Numeric: 204,
+	}
+	UnitedArabEmirates = Country{
+		Alpha2:  "AE",
+		Alpha3:  "ARE",
+		Name:    "United Arab Emirates (the)",
+		Numeric: 784,
+	}
+	Chad = Country{
+		Alpha2:  "TD",
+		Alpha3:  "TCD",
+		Name:    "Chad",
+		Numeric: 148,
+	}
+	ÅlandIslands = Country{
+		Alpha2:  "AX",
+		Alpha3:  "ALA",
+		Name:    "Åland Islands",
+		Numeric: 248,
+	}
+	SaintVincentAndTheGrenadines = Country{
+		Alpha2:  "VC",
+		Alpha3:  "VCT",
+		Name:    "Saint Vincent and the Grenadines",
+		Numeric: 670,
+	}
+	BurkinaFaso = Country{
+		Alpha2:  "BF",
+		Alpha3:  "BFA",
+		Name:    "Burkina Faso",
+		Numeric: 854,
+	}
+	IslamicRepublicOfIran = Country{
+		Alpha2:  "IR",
+		Alpha3:  "IRN",
+		Name:    "Iran (Islamic Republic of)",
+		Numeric: 364,
+	}
+	Libya = Country{
+		Alpha2:  "LY",
+		Alpha3:  "LBY",
+		Name:    "Libya",
+		Numeric: 434,
+	}
+	BruneiDarussalam = Country{
+		Alpha2:  "BN",
+		Alpha3:  "BRN",
+		Name:    "Brunei Darussalam",
+		Numeric: 96,
+	}
+	CaboVerde = Country{
+		Alpha2:  "CV",
+		Alpha3:  "CPV",
+		Name:    "Cabo Verde",
+		Numeric: 132,
+	}
+	Kuwait = Country{
+		Alpha2:  "KW",
+		Alpha3:  "KWT",
+		Name:    "Kuwait",
+		Numeric: 414,
+	}
+	Luxembourg = Country{
+		Alpha2:  "LU",
+		Alpha3:  "LUX",
+		Name:    "Luxembourg",
+		Numeric: 442,
+	}
+	Azerbaijan = Country{
+		Alpha2:  "AZ",
+		Alpha3:  "AZE",
+		Name:    "Azerbaijan",
+		Numeric: 31,
+	}
+	Cambodia = Country{
+		Alpha2:  "KH",
+		Alpha3:  "KHM",
+		Name:    "Cambodia",
+		Numeric: 116,
+	}
+	Jersey = Country{
+		Alpha2:  "JE",
+		Alpha3:  "JEY",
+		Name:    "Jersey",
+		Numeric: 832,
+	}
+	ChristmasIsland = Country{
+		Alpha2:  "CX",
+		Alpha3:  "CXR",
+		Name:    "Christmas Island",
+		Numeric: 162,
+	}
+	Fiji = Country{
+		Alpha2:  "FJ",
+		Alpha3:  "FJI",
+		Name:    "Fiji",
+		Numeric: 242,
+	}
+	Mozambique = Country{
+		Alpha2:  "MZ",
+		Alpha3:  "MOZ",
+		Name:    "Mozambique",
+		Numeric: 508,
+	}
+	TrinidadAndTobago = Country{
+		Alpha2:  "TT",
+		Alpha3:  "TTO",
+		Name:    "Trinidad and Tobago",
+		Numeric: 780,
+	}
+	DemocraticRepublicOfTheCongo = Country{
+		Alpha2:  "CD",
+		Alpha3:  "COD",
+		Name:    "Congo (the Democratic Republic of the)",
+		Numeric: 180,
+	}
+	Ghana = Country{
+		Alpha2:  "GH",
+		Alpha3:  "GHA",
+		Name:    "Ghana",
+		Numeric: 288,
+	}
+	SaintPierreAndMiquelon = Country{
+		Alpha2:  "PM",
+		Alpha3:  "SPM",
+		Name:    "Saint Pierre and Miquelon",
+		Numeric: 666,
+	}
+	Guernsey = Country{
+		Alpha2:  "GG",
+		Alpha3:  "GGY",
+		Name:    "Guernsey",
+		Numeric: 831,
+	}
+	HongKong = Country{
+		Alpha2:  "HK",
+		Alpha3:  "HKG",
+		Name:    "Hong Kong",
+		Numeric: 344,
+	}
+	Philippines = Country{
+		Alpha2:  "PH",
+		Alpha3:  "PHL",
+		Name:    "Philippines (the)",
+		Numeric: 608,
+	}
+	NewCaledonia = Country{
+		Alpha2:  "NC",
+		Alpha3:  "NCL",
+		Name:    "New Caledonia",
+		Numeric: 540,
+	}
+	Senegal = Country{
+		Alpha2:  "SN",
+		Alpha3:  "SEN",
+		Name:    "Senegal",
+		Numeric: 686,
+	}
+	UnitedKingdomOfGreatBritainAndNorthernIreland = Country{
+		Alpha2:  "GB",
+		Alpha3:  "GBR",
+		Name:    "United Kingdom of Great Britain and Northern Ireland (the)",
+		Numeric: 826,
+	}
+	Malawi = Country{
+		Alpha2:  "MW",
+		Alpha3:  "MWI",
+		Name:    "Malawi",
+		Numeric: 454,
+	}
+	DutchPartSintMaarten = Country{
+		Alpha2:  "SX",
+		Alpha3:  "SXM",
+		Name:    "Sint Maarten (Dutch part)",
+		Numeric: 534,
+	}
+	Paraguay = Country{
+		Alpha2:  "PY",
+		Alpha3:  "PRY",
+		Name:    "Paraguay",
+		Numeric: 600,
+	}
+	Portugal = Country{
+		Alpha2:  "PT",
+		Alpha3:  "PRT",
+		Name:    "Portugal",
+		Numeric: 620,
+	}
+	Algeria = Country{
+		Alpha2:  "DZ",
+		Alpha3:  "DZA",
+		Name:    "Algeria",
+		Numeric: 12,
+	}
+	Australia = Country{
+		Alpha2:  "AU",
+		Alpha3:  "AUS",
+		Name:    "Australia",
+		Numeric: 36,
+	}
+	Finland = Country{
+		Alpha2:  "FI",
+		Alpha3:  "FIN",
+		Name:    "Finland",
+		Numeric: 246,
+	}
+	Gambia = Country{
+		Alpha2:  "GM",
+		Alpha3:  "GMB",
+		Name:    "Gambia (the)",
+		Numeric: 270,
+	}
+	Haiti = Country{
+		Alpha2:  "HT",
+		Alpha3:  "HTI",
+		Name:    "Haiti",
+		Numeric: 332,
+	}
+	Jordan = Country{
+		Alpha2:  "JO",
+		Alpha3:  "JOR",
+		Name:    "Jordan",
+		Numeric: 400,
+	}
+	Lesotho = Country{
+		Alpha2:  "LS",
+		Alpha3:  "LSO",
+		Name:    "Lesotho",
+		Numeric: 426,
+	}
+	Mauritius = Country{
+		Alpha2:  "MU",
+		Alpha3:  "MUS",
+		Name:    "Mauritius",
+		Numeric: 480,
+	}
+	Cyprus = Country{
+		Alpha2:  "CY",
+		Alpha3:  "CYP",
+		Name:    "Cyprus",
+		Numeric: 196,
+	}
+	Czechia = Country{
+		Alpha2:  "CZ",
+		Alpha3:  "CZE",
+		Name:    "Czechia",
+		Numeric: 203,
+	}
+	NorthernMarianaIslands = Country{
+		Alpha2:  "MP",
+		Alpha3:  "MNP",
+		Name:    "Northern Mariana Islands (the)",
+		Numeric: 580,
+	}
+	PuertoRico = Country{
+		Alpha2:  "PR",
+		Alpha3:  "PRI",
+		Name:    "Puerto Rico",
+		Numeric: 630,
+	}
+	FrenchPartSaintMartin = Country{
+		Alpha2:  "MF",
+		Alpha3:  "MAF",
+		Name:    "Saint Martin (French part)",
+		Numeric: 663,
+	}
+	Somalia = Country{
+		Alpha2:  "SO",
+		Alpha3:  "SOM",
+		Name:    "Somalia",
+		Numeric: 706,
+	}
+	Cameroon = Country{
+		Alpha2:  "CM",
+		Alpha3:  "CMR",
+		Name:    "Cameroon",
+		Numeric: 120,
+	}
+	Palau = Country{
+		Alpha2:  "PW",
+		Alpha3:  "PLW",
+		Name:    "Palau",
+		Numeric: 585,
+	}
+	Niue = Country{
+		Alpha2:  "NU",
+		Alpha3:  "NIU",
+		Name:    "Niue",
+		Numeric: 570,
+	}
+	Tajikistan = Country{
+		Alpha2:  "TJ",
+		Alpha3:  "TJK",
+		Name:    "Tajikistan",
+		Numeric: 762,
+	}
+	Tuvalu = Country{
+		Alpha2:  "TV",
+		Alpha3:  "TUV",
+		Name:    "Tuvalu",
+		Numeric: 798,
+	}
+	CostaRica = Country{
+		Alpha2:  "CR",
+		Alpha3:  "CRI",
+		Name:    "Costa Rica",
+		Numeric: 188,
+	}
+	Kenya = Country{
+		Alpha2:  "KE",
+		Alpha3:  "KEN",
+		Name:    "Kenya",
+		Numeric: 404,
+	}
+	Ecuador = Country{
+		Alpha2:  "EC",
+		Alpha3:  "ECU",
+		Name:    "Ecuador",
+		Numeric: 218,
+	}
+	Eritrea = Country{
+		Alpha2:  "ER",
+		Alpha3:  "ERI",
+		Name:    "Eritrea",
+		Numeric: 232,
+	}
+	Greece = Country{
+		Alpha2:  "GR",
+		Alpha3:  "GRC",
+		Name:    "Greece",
+		Numeric: 300,
+	}
+	RepublicOfMoldova = Country{
+		Alpha2:  "MD",
+		Alpha3:  "MDA",
+		Name:    "Moldova (the Republic of)",
+		Numeric: 498,
+	}
+	Nauru = Country{
+		Alpha2:  "NR",
+		Alpha3:  "NRU",
+		Name:    "Nauru",
+		Numeric: 520,
+	}
+	Netherlands = Country{
+		Alpha2:  "NL",
+		Alpha3:  "NLD",
+		Name:    "Netherlands (the)",
+		Numeric: 528,
+	}
+	Botswana = Country{
+		Alpha2:  "BW",
+		Alpha3:  "BWA",
+		Name:    "Botswana",
+		Numeric: 72,
+	}
+	Comoros = Country{
+		Alpha2:  "KM",
+		Alpha3:  "COM",
+		Name:    "Comoros (the)",
+		Numeric: 174,
+	}
+	UnitedStatesMinorOutlyingIslands = Country{
+		Alpha2:  "UM",
+		Alpha3:  "UMI",
+		Name:    "United States Minor Outlying Islands (the)",
+		Numeric: 581,
+	}
+	Ukraine = Country{
+		Alpha2:  "UA",
+		Alpha3:  "UKR",
+		Name:    "Ukraine",
+		Numeric: 804,
+	}
+	Mongolia = Country{
+		Alpha2:  "MN",
+		Alpha3:  "MNG",
+		Name:    "Mongolia",
+		Numeric: 496,
+	}
+	Vanuatu = Country{
+		Alpha2:  "VU",
+		Alpha3:  "VUT",
+		Name:    "Vanuatu",
+		Numeric: 548,
+	}
+	Hungary = Country{
+		Alpha2:  "HU",
+		Alpha3:  "HUN",
+		Name:    "Hungary",
+		Numeric: 348,
+	}
+	CôteDIvoire = Country{
+		Alpha2:  "CI",
+		Alpha3:  "CIV",
+		Name:    "Côte d'Ivoire",
+		Numeric: 384,
+	}
+	Pakistan = Country{
+		Alpha2:  "PK",
+		Alpha3:  "PAK",
+		Name:    "Pakistan",
+		Numeric: 586,
+	}
+	SvalbardAndJanMayen = Country{
+		Alpha2:  "SJ",
+		Alpha3:  "SJM",
+		Name:    "Svalbard and Jan Mayen",
+		Numeric: 744,
+	}
+	Yemen = Country{
+		Alpha2:  "YE",
+		Alpha3:  "YEM",
+		Name:    "Yemen",
+		Numeric: 887,
+	}
+	KeelingCocos = Country{
+		Alpha2:  "CC",
+		Alpha3:  "CCK",
+		Name:    "Cocos (Keeling) Islands (the)",
+		Numeric: 166,
+	}
+	EquatorialGuinea = Country{
+		Alpha2:  "GQ",
+		Alpha3:  "GNQ",
+		Name:    "Equatorial Guinea",
+		Numeric: 226,
+	}
+	India = Country{
+		Alpha2:  "IN",
+		Alpha3:  "IND",
+		Name:    "India",
+		Numeric: 356,
+	}
+	Italy = Country{
+		Alpha2:  "IT",
+		Alpha3:  "ITA",
+		Name:    "Italy",
+		Numeric: 380,
+	}
+	Romania = Country{
+		Alpha2:  "RO",
+		Alpha3:  "ROU",
+		Name:    "Romania",
+		Numeric: 642,
+	}
+	Turkey = Country{
+		Alpha2:  "TR",
+		Alpha3:  "TUR",
+		Name:    "Turkey",
+		Numeric: 792,
+	}
+	Guinea = Country{
+		Alpha2:  "GN",
+		Alpha3:  "GIN",
+		Name:    "Guinea",
+		Numeric: 324,
+	}
+	Iceland = Country{
+		Alpha2:  "IS",
+		Alpha3:  "ISL",
+		Name:    "Iceland",
+		Numeric: 352,
+	}
+	Palestine = Country{
+		Alpha2:  "PS",
+		Alpha3:  "PSE",
+		Name:    "Palestine, State of",
+		Numeric: 275,
+	}
+	RussianFederation = Country{
+		Alpha2:  "RU",
+		Alpha3:  "RUS",
+		Name:    "Russian Federation (the)",
+		Numeric: 643,
+	}
+	Thailand = Country{
+		Alpha2:  "TH",
+		Alpha3:  "THA",
+		Name:    "Thailand",
+		Numeric: 764,
+	}
+	BosniaAndHerzegovina = Country{
+		Alpha2:  "BA",
+		Alpha3:  "BIH",
+		Name:    "Bosnia and Herzegovina",
+		Numeric: 70,
+	}
+	BritishIndianOceanTerritory = Country{
+		Alpha2:  "IO",
+		Alpha3:  "IOT",
+		Name:    "British Indian Ocean Territory (the)",
+		Numeric: 86,
+	}
+	BouvetIsland = Country{
+		Alpha2:  "BV",
+		Alpha3:  "BVT",
+		Name:    "Bouvet Island",
+		Numeric: 74,
+	}
+	Denmark = Country{
+		Alpha2:  "DK",
+		Alpha3:  "DNK",
+		Name:    "Denmark",
+		Numeric: 208,
+	}
+	Martinique = Country{
+		Alpha2:  "MQ",
+		Alpha3:  "MTQ",
+		Name:    "Martinique",
+		Numeric: 474,
+	}
+	Monaco = Country{
+		Alpha2:  "MC",
+		Alpha3:  "MCO",
+		Name:    "Monaco",
+		Numeric: 492,
+	}
+	Namibia = Country{
+		Alpha2:  "NA",
+		Alpha3:  "NAM",
+		Name:    "Namibia",
+		Numeric: 516,
+	}
+	Sweden = Country{
+		Alpha2:  "SE",
+		Alpha3:  "SWE",
+		Name:    "Sweden",
+		Numeric: 752,
+	}
+	Turkmenistan = Country{
+		Alpha2:  "TM",
+		Alpha3:  "TKM",
+		Name:    "Turkmenistan",
+		Numeric: 795,
+	}
+	Samoa = Country{
+		Alpha2:  "WS",
+		Alpha3:  "WSM",
+		Name:    "Samoa",
+		Numeric: 882,
+	}
+	Guatemala = Country{
+		Alpha2:  "GT",
+		Alpha3:  "GTM",
+		Name:    "Guatemala",
+		Numeric: 320,
+	}
+	Israel = Country{
+		Alpha2:  "IL",
+		Alpha3:  "ISR",
+		Name:    "Israel",
+		Numeric: 376,
+	}
+	Tanzania = Country{
+		Alpha2:  "TZ",
+		Alpha3:  "TZA",
+		Name:    "Tanzania, the United Republic of",
+		Numeric: 834,
+	}
+	Ethiopia = Country{
+		Alpha2:  "ET",
+		Alpha3:  "ETH",
+		Name:    "Ethiopia",
+		Numeric: 231,
+	}
+	Rwanda = Country{
+		Alpha2:  "RW",
+		Alpha3:  "RWA",
+		Name:    "Rwanda",
+		Numeric: 646,
+	}
+	Estonia = Country{
+		Alpha2:  "EE",
+		Alpha3:  "EST",
+		Name:    "Estonia",
+		Numeric: 233,
+	}
+	Macao = Country{
+		Alpha2:  "MO",
+		Alpha3:  "MAC",
+		Name:    "Macao",
+		Numeric: 446,
+	}
+	NorfolkIsland = Country{
+		Alpha2:  "NF",
+		Alpha3:  "NFK",
+		Name:    "Norfolk Island",
+		Numeric: 574,
+	}
+	MarshallIslands = Country{
+		Alpha2:  "MH",
+		Alpha3:  "MHL",
+		Name:    "Marshall Islands (the)",
+		Numeric: 584,
+	}
+	Andorra = Country{
+		Alpha2:  "AD",
+		Alpha3:  "AND",
+		Name:    "Andorra",
+		Numeric: 20,
+	}
+	DominicanRepublic = Country{
+		Alpha2:  "DO",
+		Alpha3:  "DOM",
+		Name:    "Dominican Republic (the)",
+		Numeric: 214,
+	}
+	Bulgaria = Country{
+		Alpha2:  "BG",
+		Alpha3:  "BGR",
+		Name:    "Bulgaria",
+		Numeric: 100,
+	}
+	DemocraticPeopleSRepublicOfKorea = Country{
+		Alpha2:  "KP",
+		Alpha3:  "PRK",
+		Name:    "Korea (the Democratic People's Republic of)",
+		Numeric: 408,
+	}
+	Curaçao = Country{
+		Alpha2:  "CW",
+		Alpha3:  "CUW",
+		Name:    "Curaçao",
+		Numeric: 531,
+	}
+	Suriname = Country{
+		Alpha2:  "SR",
+		Alpha3:  "SUR",
+		Name:    "Suriname",
+		Numeric: 740,
+	}
+	AntiguaAndBarbuda = Country{
+		Alpha2:  "AG",
+		Alpha3:  "ATG",
+		Name:    "Antigua and Barbuda",
+		Numeric: 28,
+	}
+	Mali = Country{
+		Alpha2:  "ML",
+		Alpha3:  "MLI",
+		Name:    "Mali",
+		Numeric: 466,
+	}
+	Malaysia = Country{
+		Alpha2:  "MY",
+		Alpha3:  "MYS",
+		Name:    "Malaysia",
+		Numeric: 458,
+	}
+	France = Country{
+		Alpha2:  "FR",
+		Alpha3:  "FRA",
+		Name:    "France",
+		Numeric: 250,
+	}
+	Georgia = Country{
+		Alpha2:  "GE",
+		Alpha3:  "GEO",
+		Name:    "Georgia",
+		Numeric: 268,
+	}
+	Maldives = Country{
+		Alpha2:  "MV",
+		Alpha3:  "MDV",
+		Name:    "Maldives",
+		Numeric: 462,
+	}
+	CentralAfricanRepublic = Country{
+		Alpha2:  "CF",
+		Alpha3:  "CAF",
+		Name:    "Central African Republic (the)",
+		Numeric: 140,
+	}
+	Colombia = Country{
+		Alpha2:  "CO",
+		Alpha3:  "COL",
+		Name:    "Colombia",
+		Numeric: 170,
+	}
+	Kazakhstan = Country{
+		Alpha2:  "KZ",
+		Alpha3:  "KAZ",
+		Name:    "Kazakhstan",
+		Numeric: 398,
+	}
+	AmericanSamoa = Country{
+		Alpha2:  "AS",
+		Alpha3:  "ASM",
+		Name:    "American Samoa",
+		Numeric: 16,
+	}
+	BritishVirginIslands = Country{
+		Alpha2:  "VG",
+		Alpha3:  "VGB",
+		Name:    "Virgin Islands (British)",
+		Numeric: 92,
+	}
+	HolySee = Country{
+		Alpha2:  "VA",
+		Alpha3:  "VAT",
+		Name:    "Holy See (the)",
+		Numeric: 336,
+	}
+	Réunion = Country{
+		Alpha2:  "RE",
+		Alpha3:  "REU",
+		Name:    "Réunion",
+		Numeric: 638,
+	}
+	Greenland = Country{
+		Alpha2:  "GL",
+		Alpha3:  "GRL",
+		Name:    "Greenland",
+		Numeric: 304,
+	}
+	Iraq = Country{
+		Alpha2:  "IQ",
+		Alpha3:  "IRQ",
+		Name:    "Iraq",
+		Numeric: 368,
+	}
+	Liberia = Country{
+		Alpha2:  "LR",
+		Alpha3:  "LBR",
+		Name:    "Liberia",
+		Numeric: 430,
+	}
+	Qatar = Country{
+		Alpha2:  "QA",
+		Alpha3:  "QAT",
+		Name:    "Qatar",
+		Numeric: 634,
+	}
+	SyrianArabRepublic = Country{
+		Alpha2:  "SY",
+		Alpha3:  "SYR",
+		Name:    "Syrian Arab Republic (the)",
+		Numeric: 760,
+	}
+	Bermuda = Country{
+		Alpha2:  "BM",
+		Alpha3:  "BMU",
+		Name:    "Bermuda",
+		Numeric: 60,
+	}
+	Belize = Country{
+		Alpha2:  "BZ",
+		Alpha3:  "BLZ",
+		Name:    "Belize",
+		Numeric: 84,
+	}
+	Burundi = Country{
+		Alpha2:  "BI",
+		Alpha3:  "BDI",
+		Name:    "Burundi",
+		Numeric: 108,
+	}
+	Mexico = Country{
+		Alpha2:  "MX",
+		Alpha3:  "MEX",
+		Name:    "Mexico",
+		Numeric: 484,
+	}
+	Morocco = Country{
+		Alpha2:  "MA",
+		Alpha3:  "MAR",
+		Name:    "Morocco",
+		Numeric: 504,
+	}
+	Afghanistan = Country{
+		Alpha2:  "AF",
+		Alpha3:  "AFG",
+		Name:    "Afghanistan",
+		Numeric: 4,
+	}
+	Nigeria = Country{
+		Alpha2:  "NG",
+		Alpha3:  "NGA",
+		Name:    "Nigeria",
+		Numeric: 566,
+	}
+	Djibouti = Country{
+		Alpha2:  "DJ",
+		Alpha3:  "DJI",
+		Name:    "Djibouti",
+		Numeric: 262,
+	}
+	FrenchPolynesia = Country{
+		Alpha2:  "PF",
+		Alpha3:  "PYF",
+		Name:    "French Polynesia",
+		Numeric: 258,
+	}
+	Panama = Country{
+		Alpha2:  "PA",
+		Alpha3:  "PAN",
+		Name:    "Panama",
+		Numeric: 591,
+	}
+	Albania = Country{
+		Alpha2:  "AL",
+		Alpha3:  "ALB",
+		Name:    "Albania",
+		Numeric: 8,
 	}
 	UnitedStatesOfAmerica = Country{
 		Alpha2:  "US",
@@ -1495,9 +1249,255 @@ var (
 		Name:    "United States of America (the)",
 		Numeric: 840,
 	}
+	PapuaNewGuinea = Country{
+		Alpha2:  "PG",
+		Alpha3:  "PNG",
+		Name:    "Papua New Guinea",
+		Numeric: 598,
+	}
+	GuineaBissau = Country{
+		Alpha2:  "GW",
+		Alpha3:  "GNB",
+		Name:    "Guinea-Bissau",
+		Numeric: 624,
+	}
+	SouthAfrica = Country{
+		Alpha2:  "ZA",
+		Alpha3:  "ZAF",
+		Name:    "South Africa",
+		Numeric: 710,
+	}
+	SouthSudan = Country{
+		Alpha2:  "SS",
+		Alpha3:  "SSD",
+		Name:    "South Sudan",
+		Numeric: 728,
+	}
+	Jamaica = Country{
+		Alpha2:  "JM",
+		Alpha3:  "JAM",
+		Name:    "Jamaica",
+		Numeric: 388,
+	}
+	Malta = Country{
+		Alpha2:  "MT",
+		Alpha3:  "MLT",
+		Name:    "Malta",
+		Numeric: 470,
+	}
+	IsleOfMan = Country{
+		Alpha2:  "IM",
+		Alpha3:  "IMN",
+		Name:    "Isle of Man",
+		Numeric: 833,
+	}
+	Argentina = Country{
+		Alpha2:  "AR",
+		Alpha3:  "ARG",
+		Name:    "Argentina",
+		Numeric: 32,
+	}
+	Ireland = Country{
+		Alpha2:  "IE",
+		Alpha3:  "IRL",
+		Name:    "Ireland",
+		Numeric: 372,
+	}
+	Kiribati = Country{
+		Alpha2:  "KI",
+		Alpha3:  "KIR",
+		Name:    "Kiribati",
+		Numeric: 296,
+	}
+	RepublicOfKorea = Country{
+		Alpha2:  "KR",
+		Alpha3:  "KOR",
+		Name:    "Korea (the Republic of)",
+		Numeric: 410,
+	}
+	Latvia = Country{
+		Alpha2:  "LV",
+		Alpha3:  "LVA",
+		Name:    "Latvia",
+		Numeric: 428,
+	}
+	Poland = Country{
+		Alpha2:  "PL",
+		Alpha3:  "POL",
+		Name:    "Poland",
+		Numeric: 616,
+	}
+	TimorLeste = Country{
+		Alpha2:  "TL",
+		Alpha3:  "TLS",
+		Name:    "Timor-Leste",
+		Numeric: 626,
+	}
+	Sudan = Country{
+		Alpha2:  "SD",
+		Alpha3:  "SDN",
+		Name:    "Sudan (the)",
+		Numeric: 729,
+	}
+	Bahrain = Country{
+		Alpha2:  "BH",
+		Alpha3:  "BHR",
+		Name:    "Bahrain",
+		Numeric: 48,
+	}
+	Chile = Country{
+		Alpha2:  "CL",
+		Alpha3:  "CHL",
+		Name:    "Chile",
+		Numeric: 152,
+	}
+	Canada = Country{
+		Alpha2:  "CA",
+		Alpha3:  "CAN",
+		Name:    "Canada",
+		Numeric: 124,
+	}
+	SriLanka = Country{
+		Alpha2:  "LK",
+		Alpha3:  "LKA",
+		Name:    "Sri Lanka",
+		Numeric: 144,
+	}
+	China = Country{
+		Alpha2:  "CN",
+		Alpha3:  "CHN",
+		Name:    "China",
+		Numeric: 156,
+	}
+	FalklandIslands = Country{
+		Alpha2:  "FK",
+		Alpha3:  "FLK",
+		Name:    "Falkland Islands (the) [Malvinas]",
+		Numeric: 238,
+	}
+	HeardIslandAndMcDonaldIslands = Country{
+		Alpha2:  "HM",
+		Alpha3:  "HMD",
+		Name:    "Heard Island and McDonald Islands",
+		Numeric: 334,
+	}
+	SaoTomeAndPrincipe = Country{
+		Alpha2:  "ST",
+		Alpha3:  "STP",
+		Name:    "Sao Tome and Principe",
+		Numeric: 678,
+	}
+	Antarctica = Country{
+		Alpha2:  "AQ",
+		Alpha3:  "ATA",
+		Name:    "Antarctica",
+		Numeric: 10,
+	}
+	Angola = Country{
+		Alpha2:  "AO",
+		Alpha3:  "AGO",
+		Name:    "Angola",
+		Numeric: 24,
+	}
+	Seychelles = Country{
+		Alpha2:  "SC",
+		Alpha3:  "SYC",
+		Name:    "Seychelles",
+		Numeric: 690,
+	}
+	WallisAndFutuna = Country{
+		Alpha2:  "WF",
+		Alpha3:  "WLF",
+		Name:    "Wallis and Futuna",
+		Numeric: 876,
+	}
+	LaoPeoplesDemocraticRepublic = Country{
+		Alpha2:  "LA",
+		Alpha3:  "LAO",
+		Name:    "Lao People's Democratic Republic (the)",
+		Numeric: 418,
+	}
+	Slovenia = Country{
+		Alpha2:  "SI",
+		Alpha3:  "SVN",
+		Name:    "Slovenia",
+		Numeric: 705,
+	}
+	SolomonIslands = Country{
+		Alpha2:  "SB",
+		Alpha3:  "SLB",
+		Name:    "Solomon Islands",
+		Numeric: 90,
+	}
+	SaintLucia = Country{
+		Alpha2:  "LC",
+		Alpha3:  "LCA",
+		Name:    "Saint Lucia",
+		Numeric: 662,
+	}
+	Liechtenstein = Country{
+		Alpha2:  "LI",
+		Alpha3:  "LIE",
+		Name:    "Liechtenstein",
+		Numeric: 438,
+	}
+	Anguilla = Country{
+		Alpha2:  "AI",
+		Alpha3:  "AIA",
+		Name:    "Anguilla",
+		Numeric: 660,
+	}
+	FaroeIslands = Country{
+		Alpha2:  "FO",
+		Alpha3:  "FRO",
+		Name:    "Faroe Islands (the)",
+		Numeric: 234,
+	}
+	Honduras = Country{
+		Alpha2:  "HN",
+		Alpha3:  "HND",
+		Name:    "Honduras",
+		Numeric: 340,
+	}
+	Kyrgyzstan = Country{
+		Alpha2:  "KG",
+		Alpha3:  "KGZ",
+		Name:    "Kyrgyzstan",
+		Numeric: 417,
+	}
+	Montserrat = Country{
+		Alpha2:  "MS",
+		Alpha3:  "MSR",
+		Name:    "Montserrat",
+		Numeric: 500,
+	}
+	Nepal = Country{
+		Alpha2:  "NP",
+		Alpha3:  "NPL",
+		Name:    "Nepal",
+		Numeric: 524,
+	}
+	TurksAndCaicosIslands = Country{
+		Alpha2:  "TC",
+		Alpha3:  "TCA",
+		Name:    "Turks and Caicos Islands (the)",
+		Numeric: 796,
+	}
+	Armenia = Country{
+		Alpha2:  "AM",
+		Alpha3:  "ARM",
+		Name:    "Armenia",
+		Numeric: 51,
+	}
+	Barbados = Country{
+		Alpha2:  "BB",
+		Alpha3:  "BRB",
+		Name:    "Barbados",
+		Numeric: 52,
+	}
 )
-var AllCountries = []Country{Kenya, Rwanda, Bahrain, Thailand, Australia, Cameroon, Comoros, CostaRica, WesternSahara, Samoa, Croatia, Georgia, Indonesia, Malawi, Switzerland, UnitedArabEmirates, BouvetIsland, CôteDIvoire, Madagascar, Morocco, Tajikistan, Tokelau, Belarus, ÅlandIslands, Gibraltar, Jordan, Mali, Aruba, SouthSudan, Tonga, Azerbaijan, Curaçao, Niger, Suriname, Maldives, Mexico, Antarctica, Oman, Jersey, Bhutan, FalklandIslands, Norway, Réunion, Egypt, Bahamas, Ethiopia, HolySee, Luxembourg, Turkmenistan, Ukraine, Belgium, Canada, Latvia, Montserrat, EquatorialGuinea, Gabon, India, NorthernMarianaIslands, Turkey, AntiguaAndBarbuda, CaboVerde, Portugal, HongKong, LaoPeoplesDemocraticRepublic, SaoTomeAndPrincipe, FederatedStatesOfMicronesia, Slovakia, Uzbekistan, Albania, Argentina, Ecuador, Liberia, Tuvalu, PuertoRico, Guernsey, Armenia, BritishVirginIslands, FrenchGuiana, NorfolkIsland, Palau, Pakistan, CentralAfricanRepublic, Fiji, Iraq, Libya, DutchPartSintMaarten, VietNam, Malta, Nauru, Seychelles, TrinidadAndTobago, IsleOfMan, Mayotte, Cuba, Haiti, HeardIslandAndMcDonaldIslands, Bonaire, Peru, China, Palestine, Greece, Guatemala, Paraguay, BurkinaFaso, AmericanSamoa, BruneiDarussalam, DominicanRepublic, Estonia, MarshallIslands, Somalia, BosniaAndHerzegovina, Pitcairn, Singapore, Spain, FrenchPolynesia, Guadeloupe, Israel, Nepal, Barbados, Honduras, Panama, SvalbardAndJanMayen, USVirginIslands, FaroeIslands, Guam, Mongolia, SouthGeorgiaAndTheSouthSandwichIslands, Martinique, Mozambique, TimorLeste, SaintBarthélemy, Bermuda, Chile, DemocraticPeopleSRepublicOfKorea, SouthAfrica, Eswatini, Bulgaria, IslamicRepublicOfIran, Japan, Liechtenstein, Philippines, SaintKittsAndNevis, Botswana, SaintVincentAndTheGrenadines, Algeria, Guinea, RussianFederation, BolivarianRepublicOfVenezuela, SriLanka, SierraLeone, Uruguay, Cyprus, Sweden, DemocraticRepublicOfTheCongo, Ireland, SaintLucia, Ghana, Zambia, Grenada, Netherlands, FrenchPartSaintMartin, Afghanistan, Austria, ProvinceOfChinaTaiwan, Macao, Nigeria, BritishIndianOceanTerritory, Djibouti, Kuwait, Poland, SolomonIslands, Congo, Dominica, Iceland, Niue, ElSalvador, Nicaragua, Romania, Eritrea, Hungary, Anguilla, CaymanIslands, SaudiArabia, Colombia, Denmark, Finland, Serbia, Yemen, Kiribati, Greenland, Andorra, Brazil, Jamaica, Tunisia, WallisAndFutuna, Chad, Czechia, Kazakhstan, Lebanon, NewCaledonia, Mauritius, Namibia, Bangladesh, Myanmar, Guyana, SaintPierreAndMiquelon, PlurinationalStateOfBolivia, Gambia, Monaco, Montenegro, Togo, Kyrgyzstan, Lithuania, PapuaNewGuinea, TurksAndCaicosIslands, UnitedKingdomOfGreatBritainAndNorthernIreland, Belize, Qatar, Tanzania, Lesotho, FrenchSouthernTerritories, Burundi, ChristmasIsland, SaintHelena, Benin, Germany, RepublicOfKorea, Malaysia, Mauritania, Slovenia, Cambodia, CookIslands, NewZealand, SanMarino, France, Italy, GuineaBissau, RepublicOfMoldova, SyrianArabRepublic, Uganda, Angola, NorthMacedonia, Vanuatu, UnitedStatesMinorOutlyingIslands, Senegal, KeelingCocos, Zimbabwe, Sudan, UnitedStatesOfAmerica}
-var alpha2SliceLookup = [...]uint16{
+var AllCountries = []Country{Guam, Niger, Bahamas, Switzerland, NorthMacedonia, Gabon, VietNam, SierraLeone, Bhutan, SouthGeorgiaAndTheSouthSandwichIslands, Eswatini, Madagascar, Bonaire, Bangladesh, ElSalvador, Serbia, Gibraltar, Peru, Singapore, Germany, Pitcairn, SaudiArabia, Slovakia, CaymanIslands, SaintBarthélemy, ProvinceOfChinaTaiwan, Dominica, Lebanon, SanMarino, Zambia, Brazil, Belarus, USVirginIslands, FrenchSouthernTerritories, Japan, Norway, Spain, Togo, Tunisia, Uganda, PlurinationalStateOfBolivia, Nicaragua, Uzbekistan, Belgium, Mayotte, Austria, Oman, Cuba, Montenegro, Guyana, Indonesia, Zimbabwe, CookIslands, Guadeloupe, FederatedStatesOfMicronesia, FrenchGuiana, Grenada, NewZealand, WesternSahara, BolivarianRepublicOfVenezuela, Croatia, Mauritania, Aruba, SaintHelena, SaintKittsAndNevis, Tokelau, Uruguay, Myanmar, Lithuania, Tonga, Egypt, Congo, Benin, UnitedArabEmirates, Chad, ÅlandIslands, SaintVincentAndTheGrenadines, BurkinaFaso, IslamicRepublicOfIran, Libya, BruneiDarussalam, CaboVerde, Kuwait, Luxembourg, Azerbaijan, Cambodia, Jersey, ChristmasIsland, Fiji, Mozambique, TrinidadAndTobago, DemocraticRepublicOfTheCongo, Ghana, SaintPierreAndMiquelon, Guernsey, HongKong, Philippines, NewCaledonia, Senegal, UnitedKingdomOfGreatBritainAndNorthernIreland, Malawi, DutchPartSintMaarten, Paraguay, Portugal, Algeria, Australia, Finland, Gambia, Haiti, Jordan, Lesotho, Mauritius, Cyprus, Czechia, NorthernMarianaIslands, PuertoRico, FrenchPartSaintMartin, Somalia, Cameroon, Palau, Niue, Tajikistan, Tuvalu, CostaRica, Kenya, Ecuador, Eritrea, Greece, RepublicOfMoldova, Nauru, Netherlands, Botswana, Comoros, UnitedStatesMinorOutlyingIslands, Ukraine, Mongolia, Vanuatu, Hungary, CôteDIvoire, Pakistan, SvalbardAndJanMayen, Yemen, KeelingCocos, EquatorialGuinea, India, Italy, Romania, Turkey, Guinea, Iceland, Palestine, RussianFederation, Thailand, BosniaAndHerzegovina, BritishIndianOceanTerritory, BouvetIsland, Denmark, Martinique, Monaco, Namibia, Sweden, Turkmenistan, Samoa, Guatemala, Israel, Tanzania, Ethiopia, Rwanda, Estonia, Macao, NorfolkIsland, MarshallIslands, Andorra, DominicanRepublic, Bulgaria, DemocraticPeopleSRepublicOfKorea, Curaçao, Suriname, AntiguaAndBarbuda, Mali, Malaysia, France, Georgia, Maldives, CentralAfricanRepublic, Colombia, Kazakhstan, AmericanSamoa, BritishVirginIslands, HolySee, Réunion, Greenland, Iraq, Liberia, Qatar, SyrianArabRepublic, Bermuda, Belize, Burundi, Mexico, Morocco, Afghanistan, Nigeria, Djibouti, FrenchPolynesia, Panama, Albania, UnitedStatesOfAmerica, PapuaNewGuinea, GuineaBissau, SouthAfrica, SouthSudan, Jamaica, Malta, IsleOfMan, Argentina, Ireland, Kiribati, RepublicOfKorea, Latvia, Poland, TimorLeste, Sudan, Bahrain, Chile, Canada, SriLanka, China, FalklandIslands, HeardIslandAndMcDonaldIslands, SaoTomeAndPrincipe, Antarctica, Angola, Seychelles, WallisAndFutuna, LaoPeoplesDemocraticRepublic, Slovenia, SolomonIslands, SaintLucia, Liechtenstein, Anguilla, FaroeIslands, Honduras, Kyrgyzstan, Montserrat, Nepal, TurksAndCaicosIslands, Armenia, Barbados}
+var alpha2Lookup = [...]uint16{
 	uint16(0x10):  10,
 	uint16(0x103): 360,
 	uint16(0x104): 372,
@@ -1749,7 +1749,7 @@ var alpha2SliceLookup = [...]uint16{
 	uint16(0xf3):  332,
 	uint16(0xf4):  348,
 }
-var alpha3SliceLookup = [...]uint16{
+var alpha3Lookup = [...]uint16{
 	uint16(0x100):  660,
 	uint16(0x1054): 218,
 	uint16(0x10d8): 818,
@@ -2001,7 +2001,7 @@ var alpha3SliceLookup = [...]uint16{
 	uint16(0xdcc):  214,
 	uint16(0xf20):  12,
 }
-var structSlice = [...]Country{
+var countries = [...]Country{
 	10:  Antarctica,
 	100: Bulgaria,
 	104: Myanmar,

@@ -3,7 +3,7 @@ package main
 import (
 	"bufio"
 	"flag"
-	"fmt"
+	"log"
 	"strconv"
 	"strings"
 
@@ -52,7 +52,7 @@ func main() {
 
 		numeric, err := strconv.Atoi(components[4])
 		if err != nil {
-			panic(err)
+			log.Fatal(err)
 		}
 
 		countries[numeric] = country{
@@ -72,26 +72,19 @@ func main() {
 	usedA2Indices := make(map[uint16]struct{})
 	a2LookupSliceDict := DictFunc(func(d Dict) {
 		for numeric, country := range countries {
-			firstRune := country.alpha2[0]
-			secondRune := country.alpha2[1]
-
-			firstRune -= 0x41
-			secondRune -= 0x41
-
-			fr := uint16(firstRune)
-			sr := uint16(secondRune)
-
-			index := fr<<5 + sr
+			a2 := country.alpha2
+			index := (uint16(a2[0]-0x41) << 5) + (uint16(a2[1] - 0x41))
 
 			d[Lit(index)] = Lit(numeric)
 
 			if _, ok := usedA2Indices[index]; ok {
-				panic("duplicate index")
+				log.Fatal("duplicate alpha 2 lookup index")
 			}
 
 			usedA2Indices[index] = struct{}{}
 		}
 
+		// Make sure that the alpha3Lookup slice is long enough to cope with ZZ as an input:
 		a2 := "ZZ"
 		index := (uint16(a2[0]-0x41) << 5) + uint16(a2[1]-0x41)
 		d[Lit(index)] = Lit(0)
@@ -107,12 +100,13 @@ func main() {
 			d[Lit(index)] = Lit(numeric)
 
 			if _, ok := usedA3Indices[index]; ok {
-				panic("duplicate index")
+				log.Fatal("duplicate alpha 3 lookup index")
 			}
 
 			usedA3Indices[index] = struct{}{}
 		}
 
+		// Make sure that the alpha3Lookup slice is long enough to cope with ZZZ as an input:
 		a3 := "ZZZ"
 		index := (uint16(a3[0]-0x41) << 10) + (uint16(a3[1]-0x41) << 5) + uint16(a3[2]-0x41)
 		d[Lit(index)] = Lit(0)
@@ -132,7 +126,7 @@ func main() {
 	}
 
 	if err := scanner.Err(); err != nil {
-		panic(err)
+		log.Fatal(err)
 	}
 
 	f := NewFile("iso3166_1")
@@ -141,14 +135,13 @@ func main() {
 
 	f.Var().Id("AllCountries").Op("=").Index().Id("Country").Values(countryVariables...)
 
-	f.Var().Id("alpha2SliceLookup").Op("=").Index(Op("...")).Uint16().Values(a2LookupSliceDict)
-	f.Var().Id("alpha3SliceLookup").Op("=").Index(Op("...")).Uint16().Values(a3LookupSliceDict)
+	f.Var().Id("alpha2Lookup").Op("=").Index(Op("...")).Uint16().Values(a2LookupSliceDict)
+	f.Var().Id("alpha3Lookup").Op("=").Index(Op("...")).Uint16().Values(a3LookupSliceDict)
 
-	f.Var().Id("structSlice").Op("=").Index(Op("...")).Id("Country").Values(structDict)
+	f.Var().Id("countries").Op("=").Index(Op("...")).Id("Country").Values(structDict)
 
 	if err := f.Save(*outputFileFlag); err != nil {
-		fmt.Println(err)
-		panic(err)
+		log.Fatal(err)
 	}
 }
 
