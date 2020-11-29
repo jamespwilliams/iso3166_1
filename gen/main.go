@@ -151,6 +151,23 @@ func main() {
 		}
 	})
 
+	usedA3Indices := make(map[uint16]struct{})
+	a3LookupSliceDict := DictFunc(func(d Dict) {
+		for numeric, country := range countries {
+			a3 := country.alpha3
+
+			index := (uint16(a3[2]-0x41) << 10) + (uint16(a3[1]-0x41) << 5) + uint16(a3[0]-0x41)
+
+			d[Lit(index)] = Lit(numeric)
+
+			if _, ok := usedA3Indices[index]; ok {
+				panic("duplicate index")
+			}
+
+			usedA3Indices[index] = struct{}{}
+		}
+	})
+
 	var constantDeclarations []Code
 	var constants []Code
 
@@ -178,6 +195,7 @@ func main() {
 	f.Var().Id("alpha2Lookup").Op("=").Map(String()).Op("Country").Values(a2LookupDict)
 
 	f.Var().Id("alpha2SliceLookup").Op("=").Index(Op("...")).Uint16().Values(a2LookupSliceDict)
+	f.Var().Id("alpha3SliceLookup").Op("=").Index(Op("...")).Uint16().Values(a3LookupSliceDict)
 
 	generateAlpha2Func(f, countries)
 	generateSmarterAlpha2Func(f, countries)

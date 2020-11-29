@@ -23,18 +23,61 @@ func FromAlpha2(a2 string) (Country, error) {
 }
 
 func FromAlpha2Slice(a2 string) (Country, error) {
-	firstRune := a2[0]
-	secondRune := a2[1]
+	f := uint16(a2[0] - 0x41)
+	s := uint16(a2[1] - 0x41)
 
-	firstRune -= 0x41
-	secondRune -= 0x41
+	if f > 25 {
+		f -= 0x20
+		if f > 25 {
+			return 0, ErrNoSuchCountry
+		}
+	}
 
-	fr := uint16(firstRune)
-	sr := uint16(secondRune)
+	if s > 25 {
+		s -= 0x20
+		if s > 25 {
+			return 0, ErrNoSuchCountry
+		}
+	}
 
-	index := fr<<5 + sr
+	index := f<<5 + s
 
 	c := alpha2SliceLookup[index]
+	if c == 0 {
+		return 0, ErrNoSuchCountry
+	}
+
+	return Country(c), nil
+}
+
+func FromAlpha3Slice(a3 string) (Country, error) {
+	f := uint16(a3[0] - 0x41)
+	s := uint16(a3[1] - 0x41)
+	t := uint16(a3[2] - 0x41)
+
+	if f > 25 {
+		f -= 0x20
+		if f > 25 {
+			return 0, ErrNoSuchCountry
+		}
+	}
+
+	if s > 25 {
+		s -= 0x20
+		if s > 25 {
+			return 0, ErrNoSuchCountry
+		}
+	}
+
+	if t > 25 {
+		t -= 0x20
+		if t > 25 {
+			return 0, ErrNoSuchCountry
+		}
+	}
+
+	index := f<<10 + s<<5 + t
+	c := alpha3SliceLookup[index]
 	if c == 0 {
 		return 0, ErrNoSuchCountry
 	}
