@@ -41,46 +41,6 @@ func getConstName(isoShortName string) string {
 	return constName
 }
 
-func generateAlpha2Func(f *File, countries map[int]country) Code {
-	var switchCases []Code
-	for n, c := range countries {
-		_case := Case(Lit(c.alpha2)).Block(Return(Lit(n)))
-
-		switchCases = append(switchCases, _case)
-	}
-
-	swtch := Switch(Id("a2")).Block(switchCases...)
-
-	f.Func().Id("FromAlpha2Switch").Params(Id("a2").String()).Id("Country").Block(swtch, Return(Lit(0)))
-
-	return f
-}
-
-func generateSmarterAlpha2Func(f *File, countries map[int]country) Code {
-	innerCases := make(map[byte][]Code)
-	for n, c := range countries {
-		alpha2 := c.alpha2
-		startingRune := alpha2[0]
-
-		cases := innerCases[startingRune]
-
-		cases = append(cases, Case(Lit(alpha2[1])).Block(Return(Lit(n))))
-
-		innerCases[startingRune] = cases
-	}
-
-	var switchCases []Code
-	for b, cases := range innerCases {
-		switchCases = append(switchCases, Case(Lit(b)).Block(Switch(Id("a2").Index(Lit(1))).Block(cases...)))
-	}
-
-	swtch := Switch(Id("a2").Index(Lit(0))).Block(switchCases...)
-
-	f.Func().Id("FromAlpha2Smart").Params(Id("a2").String()).Id("Country").Block(swtch, Return(Lit(0)))
-
-	return f
-}
-
 func main() {
 	outputFileFlag := flag.String("o", "generated.go", "file to output generated code to")
 
@@ -103,27 +63,16 @@ func main() {
 		}
 	}
 
-	alpha2Dict := DictFunc(func(d Dict) {
+	structDict := DictFunc(func(d Dict) {
 		for numeric, country := range countries {
-			d[Lit(numeric)] = Lit(country.alpha2)
-		}
-	})
-
-	alpha3Dict := DictFunc(func(d Dict) {
-		for numeric, country := range countries {
-			d[Lit(numeric)] = Lit(country.alpha3)
-		}
-	})
-
-	shortNameDict := DictFunc(func(d Dict) {
-		for numeric, country := range countries {
-			d[Lit(numeric)] = Lit(country.shortName)
-		}
-	})
-
-	a2LookupDict := DictFunc(func(d Dict) {
-		for numeric, country := range countries {
-			d[Lit(country.alpha2)] = Lit(numeric)
+			d[Lit(numeric)] = Block(
+				Dict{
+					Id("Numeric"): Lit(numeric),
+					Id("Name"):    Lit(country.shortName),
+					Id("Alpha2"):  Lit(country.alpha2),
+					Id("Alpha3"):  Lit(country.alpha3),
+				},
+			)
 		}
 	})
 
@@ -172,7 +121,7 @@ func main() {
 	var constants []Code
 
 	for numeric, country := range countries {
-		constantDeclarations = append(constantDeclarations, Id(country.constantName).Op("=").Lit(numeric))
+		constantDeclarations = append(constantDeclarations, Id(country.constantName).Op("=").Id("structSlice").Index(Lit(numeric)))
 		constants = append(constants, Id(country.constantName))
 	}
 
@@ -182,23 +131,14 @@ func main() {
 
 	f := NewFile("iso3166_1")
 
-	f.Const().Defs(constantDeclarations...)
+	f.Var().Defs(constantDeclarations...)
 
-	f.Var().Id("AllCountries").Op("=").Index().Op("Country").Values(constants...)
-
-	f.Var().Id("alpha2s").Op("=").Index(Op("...")).String().Values(alpha2Dict)
-
-	f.Var().Id("alpha3s").Op("=").Index(Op("...")).String().Values(alpha3Dict)
-
-	f.Var().Id("shortNames").Op("=").Index(Op("...")).String().Values(shortNameDict)
-
-	f.Var().Id("alpha2Lookup").Op("=").Map(String()).Op("Country").Values(a2LookupDict)
+	f.Var().Id("AllCountries").Op("=").Index().Id("Country").Values(constants...)
 
 	f.Var().Id("alpha2SliceLookup").Op("=").Index(Op("...")).Uint16().Values(a2LookupSliceDict)
 	f.Var().Id("alpha3SliceLookup").Op("=").Index(Op("...")).Uint16().Values(a3LookupSliceDict)
 
-	generateAlpha2Func(f, countries)
-	generateSmarterAlpha2Func(f, countries)
+	f.Var().Id("structSlice").Op("=").Index(Op("...")).Id("Country").Values(structDict)
 
 	if err := f.Save(*outputFileFlag); err != nil {
 		fmt.Println(err)
