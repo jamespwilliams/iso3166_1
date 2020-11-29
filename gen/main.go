@@ -41,6 +41,46 @@ func getConstName(isoShortName string) string {
 	return constName
 }
 
+func generateAlpha2Func(f *File, countries map[int]country) Code {
+	var switchCases []Code
+	for n, c := range countries {
+		_case := Case(Lit(c.alpha2)).Block(Return(Lit(n)))
+
+		switchCases = append(switchCases, _case)
+	}
+
+	swtch := Switch(Id("a2")).Block(switchCases...)
+
+	f.Func().Id("FromAlpha2Switch").Params(Id("a2").String()).Id("Country").Block(swtch, Return(Lit(0)))
+
+	return f
+}
+
+func generateSmarterAlpha2Func(f *File, countries map[int]country) Code {
+	innerCases := make(map[byte][]Code)
+	for n, c := range countries {
+		alpha2 := c.alpha2
+		startingRune := alpha2[0]
+
+		cases := innerCases[startingRune]
+
+		cases = append(cases, Case(Lit(alpha2[1])).Block(Return(Lit(n))))
+
+		innerCases[startingRune] = cases
+	}
+
+	var switchCases []Code
+	for b, cases := range innerCases {
+		switchCases = append(switchCases, Case(Lit(b)).Block(Switch(Id("a2").Index(Lit(1))).Block(cases...)))
+	}
+
+	swtch := Switch(Id("a2").Index(Lit(0))).Block(switchCases...)
+
+	f.Func().Id("FromAlpha2Smart").Params(Id("a2").String()).Id("Country").Block(swtch, Return(Lit(0)))
+
+	return f
+}
+
 func main() {
 	outputFileFlag := flag.String("o", "generated.go", "file to output generated code to")
 
@@ -81,6 +121,36 @@ func main() {
 		}
 	})
 
+	a2LookupDict := DictFunc(func(d Dict) {
+		for numeric, country := range countries {
+			d[Lit(country.alpha2)] = Lit(numeric)
+		}
+	})
+
+	usedA2Indices := make(map[uint16]struct{})
+	a2LookupSliceDict := DictFunc(func(d Dict) {
+		for numeric, country := range countries {
+			firstRune := country.alpha2[0]
+			secondRune := country.alpha2[1]
+
+			firstRune -= 0x41
+			secondRune -= 0x41
+
+			fr := uint16(firstRune)
+			sr := uint16(secondRune)
+
+			index := fr<<5 + sr
+
+			d[Lit(index)] = Lit(numeric)
+
+			if _, ok := usedA2Indices[index]; ok {
+				panic("duplicate index")
+			}
+
+			usedA2Indices[index] = struct{}{}
+		}
+	})
+
 	var constantDeclarations []Code
 	var constants []Code
 
@@ -104,6 +174,13 @@ func main() {
 	f.Var().Id("alpha3s").Op("=").Index(Op("...")).String().Values(alpha3Dict)
 
 	f.Var().Id("shortNames").Op("=").Index(Op("...")).String().Values(shortNameDict)
+
+	f.Var().Id("alpha2Lookup").Op("=").Map(String()).Op("Country").Values(a2LookupDict)
+
+	f.Var().Id("alpha2SliceLookup").Op("=").Index(Op("...")).Uint16().Values(a2LookupSliceDict)
+
+	generateAlpha2Func(f, countries)
+	generateSmarterAlpha2Func(f, countries)
 
 	if err := f.Save(*outputFileFlag); err != nil {
 		fmt.Println(err)
@@ -258,7 +335,7 @@ Montserrat	Montserrat	MS	MSR	500
 Morocco	Maroc (le)	MA	MAR	504
 Mozambique	Mozambique (le)	MZ	MOZ	508
 Oman	Oman	OM	OMN	512
-Namibia	Namibie (la)		NAM	516
+Namibia	Namibie (la)	NA	NAM	516
 Nauru	Nauru	NR	NRU	520
 Nepal	Népal (le)	NP	NPL	524
 Netherlands (the)	Pays-Bas (les)	NL	NLD	528
