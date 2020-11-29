@@ -65,14 +65,7 @@ func main() {
 
 	structDict := DictFunc(func(d Dict) {
 		for numeric, country := range countries {
-			d[Lit(numeric)] = Block(
-				Dict{
-					Id("Numeric"): Lit(numeric),
-					Id("Name"):    Lit(country.shortName),
-					Id("Alpha2"):  Lit(country.alpha2),
-					Id("Alpha3"):  Lit(country.alpha3),
-				},
-			)
+			d[Lit(numeric)] = Id(country.constantName)
 		}
 	})
 
@@ -117,12 +110,17 @@ func main() {
 		}
 	})
 
-	var constantDeclarations []Code
-	var constants []Code
+	var countryVariableDeclarations []Code
+	var countryVariables []Code
 
 	for numeric, country := range countries {
-		constantDeclarations = append(constantDeclarations, Id(country.constantName).Op("=").Id("structSlice").Index(Lit(numeric)))
-		constants = append(constants, Id(country.constantName))
+		countryVariableDeclarations = append(countryVariableDeclarations, Id(country.constantName).Op("=").Id("Country").Values(Dict{
+			Id("Numeric"): Lit(numeric),
+			Id("Name"):    Lit(country.shortName),
+			Id("Alpha2"):  Lit(country.alpha2),
+			Id("Alpha3"):  Lit(country.alpha3),
+		}))
+		countryVariables = append(countryVariables, Id(country.constantName))
 	}
 
 	if err := scanner.Err(); err != nil {
@@ -131,9 +129,9 @@ func main() {
 
 	f := NewFile("iso3166_1")
 
-	f.Var().Defs(constantDeclarations...)
+	f.Var().Defs(countryVariableDeclarations...)
 
-	f.Var().Id("AllCountries").Op("=").Index().Id("Country").Values(constants...)
+	f.Var().Id("AllCountries").Op("=").Index().Id("Country").Values(countryVariables...)
 
 	f.Var().Id("alpha2SliceLookup").Op("=").Index(Op("...")).Uint16().Values(a2LookupSliceDict)
 	f.Var().Id("alpha3SliceLookup").Op("=").Index(Op("...")).Uint16().Values(a3LookupSliceDict)
