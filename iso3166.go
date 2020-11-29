@@ -19,7 +19,7 @@ func FromNumeric(c int) Country {
 	return structSlice[c]
 }
 
-func FromAlpha2Slice(a2 string) (Country, error) {
+func FromAlpha2(a2 string) (Country, error) {
 	f := uint16(a2[0] - 0x41)
 	s := uint16(a2[1] - 0x41)
 
@@ -47,7 +47,7 @@ func FromAlpha2Slice(a2 string) (Country, error) {
 	return structSlice[c], nil
 }
 
-func FromAlpha3Slice(a3 string) (Country, error) {
+func FromAlpha3(a3 string) (Country, error) {
 	f := uint16(a3[0] - 0x41)
 	s := uint16(a3[1] - 0x41)
 	t := uint16(a3[2] - 0x41)
@@ -81,27 +81,3 @@ func FromAlpha3Slice(a3 string) (Country, error) {
 
 	return structSlice[c], nil
 }
-
-// // Numeric returns the Country's Numeric code, as defined in ISO3166-1
-// func (c Country) Numeric() int {
-// 	return int(c)
-// }
-//
-// // Alpha2 returns the Country's Alpha-2 code, as defined in ISO3166-1
-// func (c Country) Alpha2() string {
-// 	return alpha2s[c]
-// }
-//
-// // Alpha3 returns the Country's Alpha-3 code, as defined in ISO3166-1
-// func (c Country) Alpha3() string {
-// 	return alpha3s[c]
-// }
-//
-// // Name returns the Country's official "short name", as defined in ISO3166-1
-// func (c Country) Name() string {
-// 	return shortNames[c]
-// }
-//
-// func (c Country) String() string {
-// 	return c.Name()
-// }

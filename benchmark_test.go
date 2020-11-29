@@ -25,7 +25,7 @@ func BenchmarkLookupAlpha2Slice(b *testing.B) {
 	rand.Seed(time.Now().Unix())
 	for n := 0; n < b.N; n++ {
 		a2 := a2s[rand.Intn(len(a2s))]
-		_, _ = FromAlpha2Slice(a2)
+		_, _ = FromAlpha2(a2)
 	}
 }
 
@@ -33,6 +33,6 @@ func BenchmarkLookupAlpha3Slice(b *testing.B) {
 	rand.Seed(time.Now().Unix())
 	for n := 0; n < b.N; n++ {
 		a3 := a3s[rand.Intn(len(a3s))]
-		_, _ = FromAlpha2Slice(a3)
+		_, _ = FromAlpha3(a3)
 	}
 }
