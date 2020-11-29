@@ -26,6 +26,7 @@ func FromAlpha2(a2 string) (Country, error) {
 	s := uint16(a2[1] - 0x41)
 
 	if f > 25 {
+		// Attempt lowercase:
 		f -= 0x20
 		if f > 25 {
 			return Country{}, ErrNoSuchCountry
@@ -33,6 +34,7 @@ func FromAlpha2(a2 string) (Country, error) {
 	}
 
 	if s > 25 {
+		// Attempt lowercase:
 		s -= 0x20
 		if s > 25 {
 			return Country{}, ErrNoSuchCountry
@@ -55,6 +57,7 @@ func FromAlpha3(a3 string) (Country, error) {
 	t := uint16(a3[2] - 0x41)
 
 	if f > 25 {
+		// Attempt lowercase:
 		f -= 0x20
 		if f > 25 {
 			return Country{}, ErrNoSuchCountry
@@ -62,6 +65,7 @@ func FromAlpha3(a3 string) (Country, error) {
 	}
 
 	if s > 25 {
+		// Attempt lowercase:
 		s -= 0x20
 		if s > 25 {
 			return Country{}, ErrNoSuchCountry
@@ -69,6 +73,7 @@ func FromAlpha3(a3 string) (Country, error) {
 	}
 
 	if t > 25 {
+		// Attempt lowercase:
 		t -= 0x20
 		if t > 25 {
 			return Country{}, ErrNoSuchCountry
