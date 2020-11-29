@@ -91,6 +91,10 @@ func main() {
 
 			usedA2Indices[index] = struct{}{}
 		}
+
+		a2 := "ZZ"
+		index := (uint16(a2[0]-0x41) << 5) + uint16(a2[1]-0x41)
+		d[Lit(index)] = Lit(0)
 	})
 
 	usedA3Indices := make(map[uint16]struct{})
@@ -108,6 +112,10 @@ func main() {
 
 			usedA3Indices[index] = struct{}{}
 		}
+
+		a3 := "ZZZ"
+		index := (uint16(a3[0]-0x41) << 10) + (uint16(a3[1]-0x41) << 5) + uint16(a3[2]-0x41)
+		d[Lit(index)] = Lit(0)
 	})
 
 	var countryVariableDeclarations []Code
