@@ -6,7 +6,7 @@ import (
 	"errors"
 )
 
-//go:generate go run github.com/jamespwilliams/iso3166_1/gen -o generated.go
+//go:generate go run github.com/jamespwilliams/iso3166_1/internal/gen -o generated.go
 
 type Country struct {
 	Numeric int
