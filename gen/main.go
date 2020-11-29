@@ -98,7 +98,7 @@ func main() {
 		for numeric, country := range countries {
 			a3 := country.alpha3
 
-			index := (uint16(a3[2]-0x41) << 10) + (uint16(a3[1]-0x41) << 5) + uint16(a3[0]-0x41)
+			index := (uint16(a3[0]-0x41) << 10) + (uint16(a3[1]-0x41) << 5) + uint16(a3[2]-0x41)
 
 			d[Lit(index)] = Lit(numeric)
 

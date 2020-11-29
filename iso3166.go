@@ -2,7 +2,9 @@
 // ISO-3166-1
 package iso3166_1
 
-import "errors"
+import (
+	"errors"
+)
 
 //go:generate go run github.com/jamespwilliams/iso3166_1/gen -o generated.go
 
