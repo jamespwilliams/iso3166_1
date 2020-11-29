@@ -21,3 +21,7 @@ Source:
 cd _comparison
 go test -bench .
 ```
+
+#### Contributing
+
+Pull requests are welcome.
