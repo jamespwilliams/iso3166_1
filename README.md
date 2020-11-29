@@ -4,3 +4,20 @@
 
 Go library for efficiently accessing the country information specified in
 ISO3166-1.
+
+#### Performance
+
+| Module                                                  | Result (Alpha-2)      | Result (Alpha-3) |
+|---------------------------------------------------------|-----------------------|------------------|
+| iso3166\_1                                              |  19.7 ns/op           |  25.1 ns/op      |
+| github.com/launchdarkly/go-country-codes (unmaintained) |  49.3 ns/op           |  49.8 ns/op      |
+| github.com/TheBookPeople/iso3166                        |  64.1 ns/op           |  64.8 ns/op      |
+| github.com/biter777/countries                           | 200 ns/op             | 253 ns/op        |
+| github.com/pariz/gountries                              | 105 ns/op             | 107 ns/op        |
+
+Source:
+
+```
+cd _comparison
+go test -bench .
+```
