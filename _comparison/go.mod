@@ -2,7 +2,7 @@ module github.com/jamespwilliams/iso3166_1_comparison
 
 go 1.15
 
-replace github.com/jamespwilliams/iso3166_1 => /home/jpw/iso3166
+replace github.com/jamespwilliams/iso3166_1 => ../
 
 require (
 	github.com/TheBookPeople/iso3166 v0.0.0-20160919111731-b671ca53a641
