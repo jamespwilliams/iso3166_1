@@ -10,6 +10,8 @@ import (
 	. "github.com/dave/jennifer/jen"
 )
 
+const mask = 0b00011111
+
 type country struct {
 	constantName string
 	shortName    string
@@ -71,11 +73,11 @@ func main() {
 
 	usedA2Indices := make(map[uint16]struct{})
 	a2LookupSliceDict := DictFunc(func(d Dict) {
-		for numeric, country := range countries {
+		for _, country := range countries {
 			a2 := country.alpha2
-			index := (uint16(a2[0]-0x41) << 5) + (uint16(a2[1] - 0x41))
+			index := (uint16(a2[0]&mask) << 5) + (uint16(a2[1] & mask))
 
-			d[Lit(index)] = Lit(numeric)
+			d[Lit(index)] = Op("&").Id(country.constantName)
 
 			if _, ok := usedA2Indices[index]; ok {
 				log.Fatal("duplicate alpha 2 lookup index")
@@ -86,18 +88,18 @@ func main() {
 
 		// Make sure that the alpha3Lookup slice is long enough to cope with ZZ as an input:
 		a2 := "ZZ"
-		index := (uint16(a2[0]-0x41) << 5) + uint16(a2[1]-0x41)
-		d[Lit(index)] = Lit(0)
+		index := (uint16(a2[0]&mask) << 5) + uint16(a2[1]&mask)
+		d[Lit(index)] = Nil()
 	})
 
 	usedA3Indices := make(map[uint16]struct{})
 	a3LookupSliceDict := DictFunc(func(d Dict) {
-		for numeric, country := range countries {
+		for _, country := range countries {
 			a3 := country.alpha3
 
-			index := (uint16(a3[0]-0x41) << 10) + (uint16(a3[1]-0x41) << 5) + uint16(a3[2]-0x41)
+			index := (uint16(a3[0]&mask) << 10) + (uint16(a3[1]&mask) << 5) + uint16(a3[2]&mask)
 
-			d[Lit(index)] = Lit(numeric)
+			d[Lit(index)] = Op("&").Id(country.constantName)
 
 			if _, ok := usedA3Indices[index]; ok {
 				log.Fatal("duplicate alpha 3 lookup index")
@@ -108,8 +110,8 @@ func main() {
 
 		// Make sure that the alpha3Lookup slice is long enough to cope with ZZZ as an input:
 		a3 := "ZZZ"
-		index := (uint16(a3[0]-0x41) << 10) + (uint16(a3[1]-0x41) << 5) + uint16(a3[2]-0x41)
-		d[Lit(index)] = Lit(0)
+		index := (uint16(a3[0]&mask) << 10) + (uint16(a3[1]&mask) << 5) + uint16(a3[2]&mask)
+		d[Lit(index)] = Nil()
 	})
 
 	var countryVariableDeclarations []Code
@@ -135,8 +137,8 @@ func main() {
 
 	f.Var().Id("AllCountries").Op("=").Index().Id("Country").Values(countryVariables...)
 
-	f.Var().Id("alpha2Lookup").Op("=").Index(Op("...")).Uint16().Values(a2LookupSliceDict)
-	f.Var().Id("alpha3Lookup").Op("=").Index(Op("...")).Uint16().Values(a3LookupSliceDict)
+	f.Var().Id("alpha2Lookup").Op("=").Index(Op("...")).Op("*").Id("Country").Values(a2LookupSliceDict)
+	f.Var().Id("alpha3Lookup").Op("=").Index(Op("...")).Op("*").Id("Country").Values(a3LookupSliceDict)
 
 	f.Var().Id("countries").Op("=").Index(Op("...")).Id("Country").Values(structDict)
 
